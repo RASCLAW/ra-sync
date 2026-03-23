@@ -1,5 +1,5 @@
 # RA Context Sync
-Last updated: 2026-03-23 9:30 PM PHT
+Last updated: 2026-03-23 11:45 PM PHT
 
 ## Who Is RA
 - Ronald Adrian Sarinas, Manila, Philippines (PHT, UTC+8)
@@ -73,7 +73,10 @@ Work context (code, project details):
 - Monitor ad performance (day 2-3, check back tomorrow)
 - Wait for DTI cert + Meta Business Verification (1-2 business days)
 - After verification: publish Meta app, automate ad staging via API
+- Delete Google Photos library (takeout backup done, 28GB on PC) -- free up Drive storage
+- Upload2Drive folder set up on PC for easy Drive uploads
+- FolderSync running: mobile-cam + mobile-photos syncing to Drive
 - Top up kie.ai credits for remaining regens
 - Portfolio documentation
 - Road trip to Daet end of March (car ready, brake shoes done)
-- Google Takeout for bulk photo download (optional)
+- PC storage: cleared 4GB temp, 3.1GB recycle bin pending empty
