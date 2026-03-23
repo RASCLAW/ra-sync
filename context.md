@@ -1,5 +1,5 @@
 # RA Context Sync
-Last updated: 2026-03-24 1:15 AM PHT
+Last updated: 2026-03-24 2:00 AM PHT
 
 ## Who Is RA
 - Ronald Adrian Sarinas, Manila, Philippines (PHT, UTC+8)
@@ -39,6 +39,9 @@ Work context (code, project details):
 - Added REFERENCES.md to all 19 skills for dependency tracking
 - Improved session checkpoint script (90-min window, activity summary)
 - Dashboard has: live clock (PHT), commute weather rec for Arabelle, Baby Jah card, RA sleep/food tracking, dark/light mode, event countdowns
+- Built send_email.py for no-prompt emails to RA
+- Exploring Tapo CCTV integration for dashboard (need camera IP + RTSP credentials at home)
+- Spaghetti at work ~11pm logged from phone photo automatically
 
 ### 2026-03-23 (Monday -- shift starts tonight 8pm)
 **MASSIVE DAY. Ads are LIVE.**
