@@ -1,5 +1,5 @@
 # RA Context Sync
-Last updated: 2026-03-24 2:00 AM PHT
+Last updated: 2026-03-24 4:30 AM PHT
 
 ## Who Is RA
 - Ronald Adrian Sarinas, Manila, Philippines (PHT, UTC+8)
@@ -29,7 +29,7 @@ Work context (code, project details):
 ## Last 3 Days
 
 ### 2026-03-24 (Tuesday -- at work, shift 8pm-5am)
-**Built the family dashboard + EA system overhaul.**
+**Built the family dashboard + EA system overhaul + portfolio site.**
 - Built ra-dashboard: family dashboard with RA + Arabelle profiles, live weather (Open-Meteo), PH holidays (Nager.Date), Baby Jah tracking
 - Deployed to Vercel: ra-dashboard-lake.vercel.app
 - Built system-loadout skill (session startup sequence)
@@ -41,7 +41,12 @@ Work context (code, project details):
 - Dashboard has: live clock (PHT), commute weather rec for Arabelle, Baby Jah card, RA sleep/food tracking, dark/light mode, event countdowns
 - Built send_email.py for no-prompt emails to RA
 - Exploring Tapo CCTV integration for dashboard (need camera IP + RTSP credentials at home)
-- Spaghetti at work ~11pm logged from phone photo automatically
+- **Built RAS AI Solutions portfolio site** (`/home/ra/projects/ras-portfolio/`)
+  - Main site: case study, skills, services, timeline
+  - Interactive simulator: full content pipeline + CRM customer journey
+  - Ad staging with Meta Ads API integration (shows actual API calls)
+  - Autonomous error recovery scene (Meta rejects ad -> agent fixes + resubmits)
+  - Family easter eggs: Arabelle, Bujah, Buki hidden in the demo
 
 ### 2026-03-23 (Monday -- shift starts tonight 8pm)
 **MASSIVE DAY. Ads are LIVE.**
@@ -71,12 +76,6 @@ Work context (code, project details):
 - 12:56 AM snack, 2:40 AM chicken nuggets
 - Baby Jah woke up ~2:30 AM
 
-### 2026-03-21 (Saturday)
-- First regen batch: 8 images regenerated, pipeline fully processed
-- 36 approved, 24 rejected, 0 pending -- pipeline complete
-- 10 ads selected for Phase 1 (5 PERSON + 5 PRODUCT anchor)
-- Sheet sync overhaul, review UI upgrades
-
 ## ClaudeMob Notes
 - RA wants unconscious expense tracking -- receipt screenshots, ClaudeMob logs
 - PureGold receipts: snap 2-3 photos, ClaudeMob stitches
@@ -92,6 +91,6 @@ Work context (code, project details):
 - Upload2Drive folder set up on PC for easy Drive uploads
 - FolderSync running: mobile-cam + mobile-photos syncing to Drive
 - Top up kie.ai credits for remaining regens
-- Portfolio documentation
+- Deploy ras-portfolio to Vercel (currently local/ngrok only)
 - Road trip to Daet end of March (car ready, brake shoes done)
 - PC storage: cleared 4GB temp, 3.1GB recycle bin pending empty
