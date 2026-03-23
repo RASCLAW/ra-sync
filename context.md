@@ -1,5 +1,5 @@
 # RA Context Sync
-Last updated: 2026-03-23 10:12 AM PHT
+Last updated: 2026-03-23 9:30 PM PHT
 
 ## Who Is RA
 - Ronald Adrian Sarinas, Manila, Philippines (PHT, UTC+8)
@@ -28,36 +28,52 @@ Work context (code, project details):
 
 ## Last 3 Days
 
-### 2026-03-23 (Monday -- rest day, shift starts tonight 8pm)
-- Session started ~10 PM Sunday (March 22), rest day
+### 2026-03-23 (Monday -- shift starts tonight 8pm)
+**MASSIVE DAY. Ads are LIVE.**
+- 10 Meta Ads running (5 PERSON anchor + 5 PRODUCT anchor), P200/day
+- Day 1 results: 77 landing page views, P116 spent, P1.51 avg cost per click
+- Top performers: #22 (33 clicks), #6 (25 clicks), #20260320-002 (P0.73/click cheapest)
+- Bought **duberymnl.com** domain (Namecheap), connected to Vercel
+- Landing page deployed: full desktop + mobile layout, dark mode default
+- Landing page features: variant galleries (swipeable), feedback carousel, custom dropdown with product thumbnails, order form with express delivery option
+- Order pipeline working: form -> Google Apps Script -> Google Sheet
+- FB auto-replies updated: correct pricing (P699/P1,200), COD, duberymnl.com links
+- DTI Business Name Registration submitted: DUBERYMNL (Ref: BVZE438718986529, 1-2 days)
+- Meta Business Verification submitted (2 business days)
+- Email forwarding set up: ras@duberymnl.com -> sarinasmedia@gmail.com
+- Google Drive fully reorganized: 100+ root files -> clean folder structure
+- Phone photo sync working: FolderSync app, mobile-cam + mobile-photos folders in Drive
+- Google Photos API integration attempted -- BLOCKED (Google removed photoslibrary.readonly scope April 2025)
+- Got brake shoes replaced on the Vios (car maintenance)
+- Planning road trip to Daet, Camarines Norte (Arabelle's hometown) end of month
+
+### 2026-03-22 (Sunday -- rest day)
 - Named the service brand: **RAS AI SOLUTIONS**
-- Positioning: "I build AI-powered sales funnels that actually convert -- because I spent years qualifying leads personally at high volume."
-- Deep dive on GoHighLevel (GHL) -- feature-by-feature breakdown, exploring DIY alternatives
-- Covered: CRM (Customer Relationship Management), landing pages/funnels (RA already ahead here)
-- Edited old skateboarding video in CapCut desktop -- landscape to portrait reframe using keyframes (<10 min, first try)
-- Set up **ClaudeMob** -- RA's EA project on Claude app for mobile context
-- Built **ra-sync** repo for Claude Code <-> ClaudeMob context bridge
-- Life tracking system designed: 12 files covering schedule, family, health, finances, vehicles, home, pets, plans, lifestyle, skillset
-- ClaudeMob instructions pasted into RA's EA project -- testing next
-- Phone photos/screenshots now syncing to Google Drive (bridge complete)
-- Personal life dashboard webapp added to build list (after data fills in)
-- 12:56 AM -- ate Presto peanut butter sandwich cookies (snack)
-- 2:40 AM -- ate chicken nuggets with rice
-- Baby Jah woke up ~2:30 AM, interrupted quality time with Arabelle
-- Morning run planned with Baby Jah and Arabelle
-- Session ~10 PM to ~10 AM (long session, ~12 hours with breaks)
+- Deep dive on GoHighLevel (GHL)
+- Edited old skateboarding video in CapCut desktop
+- Set up ClaudeMob + ra-sync repo
+- Life tracking system designed (12 files)
+- 12:56 AM snack, 2:40 AM chicken nuggets
+- Baby Jah woke up ~2:30 AM
+
+### 2026-03-21 (Saturday)
+- First regen batch: 8 images regenerated, pipeline fully processed
+- 36 approved, 24 rejected, 0 pending -- pipeline complete
+- 10 ads selected for Phase 1 (5 PERSON + 5 PRODUCT anchor)
+- Sheet sync overhaul, review UI upgrades
 
 ## ClaudeMob Notes
-- RA wants unconscious expense tracking -- just send receipt screenshots, ClaudeMob logs everything
-- PureGold grocery receipts are long (3ft) -- snap 2-3 photos, ClaudeMob stitches them
-- GCash/Maya screenshots are cleaner for digital payments
-- Track recurring expense patterns and flag missing ones (gas weekly, electricity monthly)
-- Sensitive data: amounts OK to track publicly, but last 4 digits only for account numbers, never full credentials
+- RA wants unconscious expense tracking -- receipt screenshots, ClaudeMob logs
+- PureGold receipts: snap 2-3 photos, ClaudeMob stitches
+- GCash/Maya screenshots for digital payments
+- Track recurring patterns, flag missing ones
+- Sensitive data: amounts OK, last 4 digits only for accounts
 
 ## Pending / Next Up
-- Test ClaudeMob first conversation (instructions pasted, ready to test)
-- GHL feature breakdown (continue: SMS, AI chatbot, appointment booking, workflow automation, Meta Ads lead import, unified inbox, white-label portal)
-- Font extraction script (cut individual letter PNGs from DUBERY alphabet image)
-- Portfolio documentation for DuberyMNL
-- Real stage_ad.py Meta Ads test
-- Top up kie.ai credits
+- Monitor ad performance (day 2-3, check back tomorrow)
+- Wait for DTI cert + Meta Business Verification (1-2 business days)
+- After verification: publish Meta app, automate ad staging via API
+- Top up kie.ai credits for remaining regens
+- Portfolio documentation
+- Road trip to Daet end of March (car ready, brake shoes done)
+- Google Takeout for bulk photo download (optional)
