@@ -7,6 +7,9 @@
 - **Remote AI job** -- target Upwork, LinkedIn, Jobstreet for AI/automation roles
 - **Voice AI agents** -- exploring Vapi/Retell for voice agent builds
 
+## Build List
+- **Personal life dashboard** -- webapp pulling from ra-sync data (schedule, calendar, health, finances, vehicles, family). Flask + HTML/CSS/JS. Also a portfolio piece for RAS AI Solutions.
+
 ## Someday / Future
 - Deploy content pipeline to cloud (always-on server)
 - Build n8n portfolio workflows
