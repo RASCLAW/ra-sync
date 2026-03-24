@@ -1,5 +1,5 @@
 # RA Context Sync
-Last updated: 2026-03-24 5:34 PM PHT
+Last updated: 2026-03-25 1:25 AM PHT
 
 ## Who Is RA
 - Ronald Adrian Sarinas, Manila, Philippines (PHT, UTC+8)
@@ -15,50 +15,46 @@ Only fetch these when relevant to the conversation -- not all at once:
 
 ## Last 3 Days
 
+### 2026-03-25 (Wednesday) -- Night shift
+**Dashboard became a command center.**
+
+Night shift session (9 PM - 1:20 AM):
+- Optimized loadout: removed smoketest, memory loads trimmed 10->1, trust watcher manifest
+- Built life log system: life-log.md (permanent) + timeline tab (7-day) + Log tab (full observations)
+- Baby Jah dynamic status card -- auto-derives from latest data (replaces static mood)
+- Active recognition: Claude catches life data from conversation without trigger words
+- Quick Log sheet integrated into loadout -- reads both RA and Arabelle entries
+- deploy.sh auto-stamps timestamp on every deploy
+- Clickable todos sorted by urgency, Arabelle todo section added
+- Camera upload attempted via Apps Script -- CORS dead end, removed
+- ra-dashboard skill fully rewritten
+- Decided: build research agent for PH gas/food prices, Meralco, AI news
+
+Baby Jah: bread 5:35 PM, bath 6:40 PM (Arabelle), milk 6:41 PM, asleep by ~7 PM
+RA: slept 5:30-7:15 PM (pre-shift nap), at work 8 PM onward
+CCTV check 12:44 AM: Arabelle and Jah sleeping safely
+
 ### 2026-03-24 (Tuesday)
 **MASSIVE BUILD DAY. Dashboard automation complete.**
 
-Morning (6 AM - 10 AM, post-shift):
-- Processed 25+ phone files from Drive (photos, BPI balances, receipts, Tapo CCTV setup)
-- Dashboard updated with all data (balances, meals, transactions, Baby Jah tracking)
-- CCTV: Tapo C200 RTSP creds saved, go2rtc Docker running. Blocked on AP isolation.
-- Router label found: PSGLPE13NP23 (likely admin password)
-- Camera static IP confirmed: 192.168.1.4
-- Portfolio: simulator featured, jargon removed, mobile CSS overhauled
-- ClaudeMob Drive docs set up (context + instructions as Google Docs)
-- Baby Jah: milk 4 AM, lugaw 6:45 AM, poop 6:30 AM, good mood, Miss Rachel
-
-Afternoon (2:30 PM - 5:30 PM):
-- Built Quick Log: floating "+" on dashboard, 6 categories, Google Sheet backend, real-time
-- Dashboard fixes: NaN, timezone, sleep labels, hide balances (eye toggle), swipe tabs, food logs, savings account, diaper section
-- **Auto dashboard sync working end-to-end:** cron every 15 min -> watcher downloads Drive files -> Claude reads images -> updates dashboard -> deploys to Vercel
-- Tested with BPI screenshot: extracted P5,057.99 automatically
-- Sent Arabelle Google Drive setup instructions (iOS)
-- Meals: hotsilog breakfast, pork steak P80 lunch (with Bujah)
-- Baby Jah: diaper changes x4, pork steak lunch, nap 9:30 AM - 2:30 PM
+Morning: processed 25+ phone files, CCTV setup, portfolio polish, ClaudeMob Drive docs
+Afternoon: Quick Log, auto dashboard sync end-to-end, BPI auto-extract, dashboard fixes
+Baby Jah: milk 4 AM, lugaw 6:45 AM, pork steak lunch, pasta dinner, bath 6:40 PM, milk 6:41 PM, asleep ~7 PM
+RA: hotsilog breakfast, pork steak P80 lunch, slept 10 AM-2:30 PM + 5:30-7:15 PM
 
 ### 2026-03-23 (Monday)
 **Ads are LIVE.**
 - 10 Meta Ads running (P200/day), Day 1: 77 views, P1.51 CPC
-- duberymnl.com domain bought, landing page deployed
-- DTI + Meta Business Verification submitted
-- Built RAS AI Solutions portfolio site + simulator
-- Built ra-dashboard, deployed to Vercel
-- System overhaul: loadout, closeout, save commands
-
-### 2026-03-22 (Sunday -- rest day)
-- Named the service brand: RAS AI SOLUTIONS
-- Deep dive on GoHighLevel (GHL)
-- Set up ClaudeMob + ra-sync repo
+- duberymnl.com deployed, DTI + Meta Business Verification submitted
+- Built ra-dashboard + ras-portfolio, deployed to Vercel
 
 ## Pending / Next Up
-- Monitor ad performance (day 2-3)
+- Research agent (PH gas/food/electricity prices, AI news)
+- Remote agent / loop for proactive file processing
+- Monitor ad performance
 - DTI cert + Meta Business Verification (should land this week)
-- CCTV: disable AP isolation on router, test RTSP stream
-- Deploy ras-portfolio to Vercel
-- Top up kie.ai credits
-- Discuss .claude folder guide from Twitter (.tmp/twitter_claude_folder_guide.md)
-- Road trip to Daet Mar 28 - Apr 2
+- CCTV: disable AP isolation on router
 - Mar 25: Call ACE Hospital Pateros (PhilCare HMO)
 - Mar 26: Hospital visit for med cert
 - Mar 28: Pay parking P3,000 + depart for Daet 8-9 PM
+- Road trip to Daet Mar 28 - Apr 2
