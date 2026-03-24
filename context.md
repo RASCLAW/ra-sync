@@ -1,5 +1,5 @@
 # RA Context Sync
-Last updated: 2026-03-24 4:30 AM PHT
+Last updated: 2026-03-24 8:50 AM PHT
 
 ## Who Is RA
 - Ronald Adrian Sarinas, Manila, Philippines (PHT, UTC+8)
@@ -28,69 +28,58 @@ Work context (code, project details):
 
 ## Last 3 Days
 
-### 2026-03-24 (Tuesday -- at work, shift 8pm-5am)
-**Built the family dashboard + EA system overhaul + portfolio site.**
-- Built ra-dashboard: family dashboard with RA + Arabelle profiles, live weather (Open-Meteo), PH holidays (Nager.Date), Baby Jah tracking
-- Deployed to Vercel: ra-dashboard-lake.vercel.app
-- Built system-loadout skill (session startup sequence)
-- Built session-closeout skill (AFK = push everything)
-- Built 7 /save slash commands
-- Consolidated 15 scattered memory files into 3 clean behaviour files
-- Added REFERENCES.md to all 19 skills for dependency tracking
-- Improved session checkpoint script (90-min window, activity summary)
-- Dashboard has: live clock (PHT), commute weather rec for Arabelle, Baby Jah card, RA sleep/food tracking, dark/light mode, event countdowns
-- Built send_email.py for no-prompt emails to RA
-- Exploring Tapo CCTV integration for dashboard (need camera IP + RTSP credentials at home)
-- **Built RAS AI Solutions portfolio site** (`/home/ra/projects/ras-portfolio/`)
-  - Main site: case study, skills, services, timeline
-  - Interactive simulator: full content pipeline + CRM customer journey
-  - Ad staging with Meta Ads API integration (shows actual API calls)
-  - Autonomous error recovery scene (Meta rejects ad -> agent fixes + resubmits)
-  - Family easter eggs: Arabelle, Bujah, Buki hidden in the demo
+### 2026-03-24 (Tuesday -- post-shift, home)
+**Session 50: System polish + phone sync + CCTV + portfolio mobile.**
+- Work shift ended 5 AM, home by 5:30 AM
+- P600 cash to Arabelle, P59 load deducted from BPI payroll (to 09278374069)
+- Parking P85 at McKinley Town Center (work, 9 hrs)
+- Meals at work: spaghetti ~11 PM, rice + meat + soup ~2 AM
+- Morning outing with Bujah -- bought lugaw + egg
+- Baby Jah: milk 4 AM, poop 6:30 AM (semi-hard round), good mood, watching Miss Rachel, lugaw + egg breakfast
+- Full phone sync: 25+ files processed (photos, BPI balances, Meralco bill, Tapo CCTV setup, Messenger convos)
+- Dashboard updated: balances, meals, transactions, Baby Jah (feeding, diapers, mood, activities), diaper section added to UI
+- CCTV: Tapo C200 RTSP creds saved, go2rtc Docker running. Blocked -- camera unreachable from WSL2 (AP isolation). Router label found: PSGLPE13NP23. Camera static IP confirmed: 192.168.1.4
+- Phone sync manifest built with filename dedup
+- ClaudeMob: Drive integration set up, instructions + context as Google Docs in Drive/ClaudeMob/
+- Portfolio: simulator featured on main page, jargon removed, mobile CSS overhauled
+- ClaudeMob project instructions set up in claude.ai (RA's EA project)
+- Google Docs API enabled on project
+- Arabelle showed interest in dashboard -- wants Baby Jah data prioritized
 
 ### 2026-03-23 (Monday -- shift starts tonight 8pm)
 **MASSIVE DAY. Ads are LIVE.**
 - 10 Meta Ads running (5 PERSON anchor + 5 PRODUCT anchor), P200/day
-- Day 1 results: 77 landing page views, P116 spent, P1.51 avg cost per click
+- Day 1 results: 77 landing page views, P116 spent, P1.51 avg CPC
 - Top performers: #22 (33 clicks), #6 (25 clicks), #20260320-002 (P0.73/click cheapest)
-- Bought **duberymnl.com** domain (Namecheap), connected to Vercel
-- Landing page deployed: full desktop + mobile layout, dark mode default
-- Landing page features: variant galleries (swipeable), feedback carousel, custom dropdown with product thumbnails, order form with express delivery option
+- Bought duberymnl.com domain (Namecheap), connected to Vercel
+- Landing page deployed: dark mode, variant galleries, order form, feedback carousel
 - Order pipeline working: form -> Google Apps Script -> Google Sheet
-- FB auto-replies updated: correct pricing (P699/P1,200), COD, duberymnl.com links
-- DTI Business Name Registration submitted: DUBERYMNL (Ref: BVZE438718986529, 1-2 days)
+- DTI Business Name Registration submitted: DUBERYMNL (1-2 days)
 - Meta Business Verification submitted (2 business days)
-- Email forwarding set up: ras@duberymnl.com -> sarinasmedia@gmail.com
-- Google Drive fully reorganized: 100+ root files -> clean folder structure
-- Phone photo sync working: FolderSync app, mobile-cam + mobile-photos folders in Drive
-- Google Photos API integration attempted -- BLOCKED (Google removed photoslibrary.readonly scope April 2025)
-- Got brake shoes replaced on the Vios (car maintenance)
-- Planning road trip to Daet, Camarines Norte (Arabelle's hometown) end of month
+- Email forwarding: ras@duberymnl.com -> sarinasmedia@gmail.com
+- Google Drive fully reorganized
+- Brake shoes replaced on Vios
+- Built RAS AI Solutions portfolio site + interactive simulator
+- Built ra-dashboard (family dashboard, deployed to Vercel)
+- System overhaul: loadout, closeout, 7 save commands, memory consolidation
 
 ### 2026-03-22 (Sunday -- rest day)
-- Named the service brand: **RAS AI SOLUTIONS**
+- Named the service brand: RAS AI SOLUTIONS
 - Deep dive on GoHighLevel (GHL)
 - Edited old skateboarding video in CapCut desktop
 - Set up ClaudeMob + ra-sync repo
 - Life tracking system designed (12 files)
-- 12:56 AM snack, 2:40 AM chicken nuggets
-- Baby Jah woke up ~2:30 AM
-
-## ClaudeMob Notes
-- RA wants unconscious expense tracking -- receipt screenshots, ClaudeMob logs
-- PureGold receipts: snap 2-3 photos, ClaudeMob stitches
-- GCash/Maya screenshots for digital payments
-- Track recurring patterns, flag missing ones
-- Sensitive data: amounts OK, last 4 digits only for accounts
 
 ## Pending / Next Up
-- Monitor ad performance (day 2-3, check back tomorrow)
-- Wait for DTI cert + Meta Business Verification (1-2 business days)
+- Monitor ad performance (day 2-3)
+- Wait for DTI cert + Meta Business Verification (should land this week)
 - After verification: publish Meta app, automate ad staging via API
-- Delete Google Photos library (takeout backup done, 28GB on PC) -- free up Drive storage
-- Upload2Drive folder set up on PC for easy Drive uploads
-- FolderSync running: mobile-cam + mobile-photos syncing to Drive
+- CCTV: disable AP isolation on router (password: PSGLPE13NP23?), test RTSP stream
+- Deploy ras-portfolio to Vercel
 - Top up kie.ai credits for remaining regens
-- Deploy ras-portfolio to Vercel (currently local/ngrok only)
-- Road trip to Daet end of March (car ready, brake shoes done)
-- PC storage: cleared 4GB temp, 3.1GB recycle bin pending empty
+- Road trip to Daet Mar 28 - Apr 2 (Zach's graduation)
+- Mar 25: Call ACE Hospital Pateros (PhilCare HMO)
+- Mar 26: Hospital visit for med cert
+- Mar 27: Withdraw cash + check weather
+- Mar 28: Pay parking P3,000 + depart for Daet 8-9 PM
+- Apr 11: Iver Sage 1st birthday, Jollibee Green Meadows 4 PM
