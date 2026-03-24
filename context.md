@@ -1,11 +1,11 @@
 # RA Context Sync
-Last updated: 2026-03-25 1:25 AM PHT
+Last updated: 2026-03-25 4:55 AM PHT
 
 ## Who Is RA
 - Ronald Adrian Sarinas, Manila, Philippines (PHT, UTC+8)
 - Home: San Joaquin, Pasig
 - Partner: Arabelle (Gmail: morenopabicoara@gmail.com, nickname: Maganda)
-- Baby: Baby Jah (Bujah)
+- Baby: Baby Jah (born June 24, 2024 -- 21 months old)
 - Cat: Buki
 - Business: DuberyMNL (polarized sunglasses) + RAS AI SOLUTIONS (AI automation service brand)
 
@@ -16,23 +16,24 @@ Only fetch these when relevant to the conversation -- not all at once:
 ## Last 3 Days
 
 ### 2026-03-25 (Wednesday) -- Night shift
-**Dashboard became a command center.**
+**Two sessions: dashboard command center + performance fix + full research.**
 
-Night shift session (9 PM - 1:20 AM):
-- Optimized loadout: removed smoketest, memory loads trimmed 10->1, trust watcher manifest
-- Built life log system: life-log.md (permanent) + timeline tab (7-day) + Log tab (full observations)
-- Baby Jah dynamic status card -- auto-derives from latest data (replaces static mood)
-- Active recognition: Claude catches life data from conversation without trigger words
-- Quick Log sheet integrated into loadout -- reads both RA and Arabelle entries
-- deploy.sh auto-stamps timestamp on every deploy
-- Clickable todos sorted by urgency, Arabelle todo section added
-- Camera upload attempted via Apps Script -- CORS dead end, removed
-- ra-dashboard skill fully rewritten
-- Decided: build research agent for PH gas/food prices, Meralco, AI news
+Session 52 (9 PM - 1:20 AM + post-shift):
+- Loadout optimization, life log system, Baby Jah dynamic status, Quick Log integration
+- Research agent skill, skill creator skill, article builder skill built
+- First article page: Claude Dispatch
+- Work PC crashed ~4:30 AM (recurring pattern). All work saved.
 
-Baby Jah: bread 5:35 PM, bath 6:40 PM (Arabelle), milk 6:41 PM, asleep by ~7 PM
-RA: slept 5:30-7:15 PM (pre-shift nap), at work 8 PM onward
-CCTV check 12:44 AM: Arabelle and Jah sleeping safely
+Session 53 (4:00 AM - 4:55 AM, post-crash):
+- Dashboard load time: 12s -> 3-5s (lazy tabs, parallel APIs, localStorage cache)
+- News tab rearranged: Career > AI News > Local News > YouTube > Hardware > Life Hacks > Parenting > Fuel > Food > Meralco
+- Full research run: all 10 sections populated
+- Career jobs now clickable with Upwork links
+- Baby Jah age corrected: born June 24, 2024 (21 months)
+- Backlog added: Phone Watcher, article pages, Summary tab, portfolio deploy
+
+Baby Jah: woke ~4:34 AM (CCTV motion detected)
+Payroll balance: ~P4,958
 
 ### 2026-03-24 (Tuesday)
 **MASSIVE BUILD DAY. Dashboard automation complete.**
@@ -49,8 +50,10 @@ RA: hotsilog breakfast, pork steak P80 lunch, slept 10 AM-2:30 PM + 5:30-7:15 PM
 - Built ra-dashboard + ras-portfolio, deployed to Vercel
 
 ## Pending / Next Up
-- Research agent (PH gas/food/electricity prices, AI news)
-- Remote agent / loop for proactive file processing
+- Phone Watcher: build background Drive poller (designed, not built)
+- Personalized article pages from research data (token-heavy, selective)
+- Summary tab for dashboard
+- Portfolio deploy to Vercel (ras-portfolio)
 - Monitor ad performance
 - DTI cert + Meta Business Verification (should land this week)
 - CCTV: disable AP isolation on router
