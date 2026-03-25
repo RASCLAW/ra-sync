@@ -1,5 +1,5 @@
 # RA Context Sync
-Last updated: 2026-03-25 10:25 AM PHT
+Last updated: 2026-03-25 5:05 PM PHT
 
 ## Who Is RA
 - Ronald Adrian Sarinas, Manila, Philippines (PHT, UTC+8)
@@ -15,23 +15,19 @@ Only fetch these when relevant to the conversation -- not all at once:
 
 ## Last 3 Days
 
-### 2026-03-25 (Wednesday)
+### 2026-03-25 (Wednesday) -- Sessions 54-55
 **Session 54: Full system audit + skill overhaul.**
+- Skill audit: 29 -> 22 skills. Memory overhaul: 325 -> 100 lines. Save system: 7 -> 2 commands.
 
-- Full folder audit across all projects. Moved misplaced files (cctv, photos, stray scripts)
-- Skill audit: 29 -> 22 skills. Moved generics to global, merged duplicates, deleted stale
-- Memory overhaul: MEMORY.md trimmed 325 -> 100 lines, proper index format
-- Save system redesign: 7 commands -> 2 (/save smart router + /close)
-- Security: gitignore gaps closed. Archived 2 dead projects.
-- Baby Jah: 3 poops morning (hard + soft, straining), lugaw + egg breakfast, milk 7oz
-- Morning walk with Bujah. P600 pocket money to Arabelle. Adobong manok lunch P150.
-- 14 unprocessed phone files pending for next session
-
-### 2026-03-25 (earlier) -- Sessions 52-53
-- Dashboard performance: 12s -> 3-5s load time
-- Research agent: all 10 sections populated
-- News tab rearranged by priority. Career jobs clickable.
-- Work PC crashed ~4:30 AM (recurring). All work saved.
+**Session 55: Workspace learning + dashboard updates.**
+- PostToolUse hook confirmed working
+- Processed 5 new phone files from Drive (parking, hospital lookup, 2x BPI transfers, CCTV)
+- VS Code workspace "aha" moment: file context passing, status bar, remote tunnel workflow
+- Direct workspace URL: https://vscode.dev/tunnel/dubery-dev/home/ra/ra.code-workspace
+- FolderSync DNS error diagnosed (Android Doze mode -- fix: battery optimization > unrestricted)
+- ACE Hospital Pateros confirmed WITH ACCESS for PhilCare HMO (PhilDigiMed app)
+- Baby Jah: lugaw+egg AM, milk 8AM, milk 2:30PM, adobo rice 3:30PM. Nap woke 1:30PM.
+- RA: slept 11AM-3PM. Rice+egg. Two InstaPay to Arabelle (P600+P200). Payroll P4,137.99.
 
 ### 2026-03-24 (Tuesday)
 **MASSIVE BUILD DAY. Dashboard automation complete.**
@@ -47,12 +43,10 @@ Only fetch these when relevant to the conversation -- not all at once:
 ## Pending / Next Up
 - Split overgrown skills (prompt-writer, ugc-prompt-writer, caption-gen)
 - Build skill directory (viewable list for RA)
-- Create .code-workspace file
-- Process 14 phone files from today
+- Mar 26: Hospital visit for med cert (ACE Pateros confirmed)
+- Mar 27: File leave at Informdata, withdraw cash
+- Mar 28: Pay parking P3,000 + depart for Daet 8-9 PM
+- Road trip to Daet Mar 28 - Apr 2
 - Phone Watcher: build background Drive poller
 - Summary tab for dashboard
 - Monitor ad performance
-- Mar 25: Call ACE Hospital Pateros (PhilCare HMO)
-- Mar 26: Hospital visit for med cert
-- Mar 28: Pay parking P3,000 + depart for Daet 8-9 PM
-- Road trip to Daet Mar 28 - Apr 2
