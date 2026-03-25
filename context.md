@@ -1,5 +1,5 @@
 # RA Context Sync
-Last updated: 2026-03-25 4:55 AM PHT
+Last updated: 2026-03-25 10:25 AM PHT
 
 ## Who Is RA
 - Ronald Adrian Sarinas, Manila, Philippines (PHT, UTC+8)
@@ -15,48 +15,43 @@ Only fetch these when relevant to the conversation -- not all at once:
 
 ## Last 3 Days
 
-### 2026-03-25 (Wednesday) -- Night shift
-**Two sessions: dashboard command center + performance fix + full research.**
+### 2026-03-25 (Wednesday)
+**Session 54: Full system audit + skill overhaul.**
 
-Session 52 (9 PM - 1:20 AM + post-shift):
-- Loadout optimization, life log system, Baby Jah dynamic status, Quick Log integration
-- Research agent skill, skill creator skill, article builder skill built
-- First article page: Claude Dispatch
-- Work PC crashed ~4:30 AM (recurring pattern). All work saved.
+- Full folder audit across all projects. Moved misplaced files (cctv, photos, stray scripts)
+- Skill audit: 29 -> 22 skills. Moved generics to global, merged duplicates, deleted stale
+- Memory overhaul: MEMORY.md trimmed 325 -> 100 lines, proper index format
+- Save system redesign: 7 commands -> 2 (/save smart router + /close)
+- Security: gitignore gaps closed. Archived 2 dead projects.
+- Baby Jah: 3 poops morning (hard + soft, straining), lugaw + egg breakfast, milk 7oz
+- Morning walk with Bujah. P600 pocket money to Arabelle. Adobong manok lunch P150.
+- 14 unprocessed phone files pending for next session
 
-Session 53 (4:00 AM - 4:55 AM, post-crash):
-- Dashboard load time: 12s -> 3-5s (lazy tabs, parallel APIs, localStorage cache)
-- News tab rearranged: Career > AI News > Local News > YouTube > Hardware > Life Hacks > Parenting > Fuel > Food > Meralco
-- Full research run: all 10 sections populated
-- Career jobs now clickable with Upwork links
-- Baby Jah age corrected: born June 24, 2024 (21 months)
-- Backlog added: Phone Watcher, article pages, Summary tab, portfolio deploy
-
-Baby Jah: woke ~4:34 AM (CCTV motion detected)
-Payroll balance: ~P4,958
+### 2026-03-25 (earlier) -- Sessions 52-53
+- Dashboard performance: 12s -> 3-5s load time
+- Research agent: all 10 sections populated
+- News tab rearranged by priority. Career jobs clickable.
+- Work PC crashed ~4:30 AM (recurring). All work saved.
 
 ### 2026-03-24 (Tuesday)
 **MASSIVE BUILD DAY. Dashboard automation complete.**
-
-Morning: processed 25+ phone files, CCTV setup, portfolio polish, ClaudeMob Drive docs
-Afternoon: Quick Log, auto dashboard sync end-to-end, BPI auto-extract, dashboard fixes
-Baby Jah: milk 4 AM, lugaw 6:45 AM, pork steak lunch, pasta dinner, bath 6:40 PM, milk 6:41 PM, asleep ~7 PM
-RA: hotsilog breakfast, pork steak P80 lunch, slept 10 AM-2:30 PM + 5:30-7:15 PM
+- 25+ phone files processed, CCTV setup, portfolio polish, ClaudeMob Drive docs
+- Quick Log, auto dashboard sync, BPI auto-extract
+- Baby Jah: milk 4 AM, lugaw 6:45 AM, pork steak, pasta, bath, milk, asleep ~7 PM
 
 ### 2026-03-23 (Monday)
 **Ads are LIVE.**
 - 10 Meta Ads running (P200/day), Day 1: 77 views, P1.51 CPC
 - duberymnl.com deployed, DTI + Meta Business Verification submitted
-- Built ra-dashboard + ras-portfolio, deployed to Vercel
 
 ## Pending / Next Up
-- Phone Watcher: build background Drive poller (designed, not built)
-- Personalized article pages from research data (token-heavy, selective)
+- Split overgrown skills (prompt-writer, ugc-prompt-writer, caption-gen)
+- Build skill directory (viewable list for RA)
+- Create .code-workspace file
+- Process 14 phone files from today
+- Phone Watcher: build background Drive poller
 - Summary tab for dashboard
-- Portfolio deploy to Vercel (ras-portfolio)
 - Monitor ad performance
-- DTI cert + Meta Business Verification (should land this week)
-- CCTV: disable AP isolation on router
 - Mar 25: Call ACE Hospital Pateros (PhilCare HMO)
 - Mar 26: Hospital visit for med cert
 - Mar 28: Pay parking P3,000 + depart for Daet 8-9 PM
