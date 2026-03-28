@@ -1,20 +1,19 @@
 # Health
 
-## Food Log
-### 2026-03-23
-- 12:56 AM -- Presto peanut butter sandwich cookies (snack)
-- 2:40 AM -- Chicken nuggets with rice
+## RA
+- Sleep: two-block pattern. Usually 5-6.5 hrs total. Flag if <5 hrs for 2+ days
+- HMO: PhilCare, ACE Hospital Pateros confirmed
+- Night shift eating: 7-Eleven (fried chicken, nuggets, spaghetti)
+- Drives on antihistamines occasionally (drowsiness risk on long trips)
+- Tends to skip meals during intense Claude Code sessions
 
-## Sleep
-(to be tracked)
+## Baby Jah
+- 21 months old. Walking confidently.
+- Eating well: lugaw, pasta, adobo, pork steak, bread, milk, Jollibee
+- Constipation watch: semi-hard poops, straining noted Mar 25. Monitor hydration + fiber
+- Next checkup: TBD
+- No current medication
 
-## Exercise
-- Morning runs with Baby Jah and Arabelle (regular activity)
-
-## Vices
-(to be tracked)
-
-## Notes
-- Tendency to work 3+ hours without eating during night shift / Claude Code sessions
-
-(ClaudeMob: track everything RA mentions, including but not limited to: meals, snacks, water, sleep times, exercise, health issues, checkups, meds, energy levels)
+## Arabelle
+- Generally healthy
+- Commutes by mototaxi -- check weather for car/Grab on heavy rain days

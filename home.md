@@ -1,15 +1,16 @@
 # Home
 
 ## Location
-- San Joaquin, Pasig
+- San Joaquin, Pasig, Metro Manila
 
-## Appliances & Maintenance
-(to be filled)
+## Setup
+- CCTV: TP-Link Tapo camera (RA monitors family from work)
+- Internet: PLDT Fibr (P1,700/mo)
+- RA's PC: Windows + WSL2 (Ubuntu), Claude Code via VS Code
+- VS Code tunnel: dubery-dev (accessible from vscode.dev)
 
-## Bills
-(to be filled -- electricity, water, internet, etc.)
-
-## Issues / Repairs
-(to be tracked)
-
-(ClaudeMob: track everything RA mentions, including but not limited to: bills, maintenance, repairs, appliance issues, renovations, purchases for the house)
+## Monthly Costs
+- Rent: P4,000 (due 15th)
+- Meralco: ~P3,269-5,503 (summer spike)
+- PLDT Fibr: P1,700
+- Maynilad: P887

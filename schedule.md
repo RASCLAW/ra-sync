@@ -1,20 +1,30 @@
 # Schedule
 
+## Current Status
+**ON VACATION** -- Daet trip Mar 26-30. Back to work Mar 31.
+
 ## RA
 - **Work nights (Mon-Fri):** 8pm-5am, Informdata, McKinley Hills, Taguig
-- **Rest nights:** Saturday + Sunday (off)
-- **After shift:** 5am+ personal time, family, side projects
-- **Side project time:** Rest days + after-shift hours, Claude Code sessions
+- **Commute:** Yamaha Mio Sporty. Leaves ~7:45pm, returns ~5am
+- **Sleep:** Two blocks -- post-shift ~10am-2:30pm, pre-shift ~5-7pm. Total 5-6.5 hrs
+- **Morning:** Home ~5am, walk with Baby Jah ~6-7am (buys lugaw), then sleep
+- **Rest days:** Saturday + Sunday
 
 ## Arabelle
-- **Rest days:** Saturday + Sunday (off)
-- **Monday + Friday:** Work from home, 6am-3pm
-- **Tuesday-Thursday:** Office, 6am-3pm
+- **Work (Mon-Fri):** 6am-3pm
+- **Monday + Friday:** Work from home
+- **Tuesday-Thursday:** Office. Leaves ~5:30am via mototaxi
+- **Rest days:** Saturday + Sunday
 
 ## How to Read the Day
-- Weekday, before 8pm = RA at home (pre-shift)
-- Weekday, 8pm-5am = RA at work (McKinley Hills)
-- Weekday, 5am-8pm = RA at home (post-shift, likely sleeping morning, awake afternoon)
-- Saturday/Sunday = rest day, home with family
-- Mon/Fri morning = Arabelle WFH, both home
-- Tue-Thu morning = Arabelle at office, RA home with Baby Jah
+- Weekday before 8pm = RA at home (pre-shift)
+- Weekday 8pm-5am = RA at work
+- Weekday 5am-noon = RA sleeping
+- Weekday noon-7pm = RA awake at home
+- Sat/Sun = rest day, family time
+
+## Automated Systems
+- Dashboard sync: cron every 15 min
+- Belle bot: @reboot auto-start
+- Morning brief: 6:30 AM (vacation), 10 AM (normal)
+- Meta Ads dayparting: pause 12 AM, activate 6 AM (GitHub Actions)
