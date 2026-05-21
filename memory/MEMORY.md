@@ -1,7 +1,38 @@
 # Memory Index
 
 - [**RESUME HERE**](RESUME.md) -- latest savepoint, read first on new session
-- [Team Faith Dashboard](project_team_faith_dashboard.md) -- React scorecard dashboard for Informdata team; source file, formulas, PDF pipeline, open: Marielle Fuse scoring question
+- [Google API httplib2 Fallback](reference_googleapi_httplib2_fallback.md) -- when googleapiclient hangs on sheets.googleapis.com, drop down to requests + bearer token from google.oauth2; distinct from cache_discovery hang
+- [Printing Press CLI Factory](reference_printing_press.md) -- 2026-05-20 -- mvanhorn's CLI factory + 144-CLI library; Go 1.26.3 + binary v4.9.0 installed; coingecko validated; Windows tar-extract gotcha
+- [Feed Post Scheduler](project_feed_scheduler.md) -- 2026-05-21 session 166 -- **SHIPPED** queue-based FB feed scheduler (multi-image + 7-layout collage + CC tab + hourly cron); 4 live posts validated
+- [ras-projects Dashboard](project_ras_projects_dashboard.md) -- 2026-05-21 -- personal backlog at ras-projects.pages.dev with smart Start prompt; 3 verdict paths validated (ALREADY_DONE / STALE / SCOPE_CHANGED)
+- [ras-projects Start Workflow](reference_ras_projects_workflow.md) -- verdict labels + edit shapes + smoke-check pattern; pasted into any Claude session to resolve backlog items
+- [Schedule Tab v1](project_schedule_tab_v1.md) -- v1 capability catalog: Compose-only, single/multi/collage modes, FB preview, bank picker, 3-col queue, cron + TG pings; LIVE
+- [Schedule Tab v2 Plan](project_schedule_tab_v2_plan.md) -- 21-task plan for AI Suggest + Calendar; SUPERSEDED by v2_shipped
+- [Schedule v2 SHIPPED](project_schedule_v2_shipped.md) -- 2026-05-21 session 169 -- AI Suggest chat (Sonnet 4.6, image-aware, holiday-injected) + Calendar (PH holidays + manual events + month grid) live
+- [Image Bank Overhaul](project_image_bank_overhaul.md) -- 2026-05-21 session 169 -- 570 images visible (was 214), /api/thumb 240px JPEGs (~106x smaller), favorites/archive/delete server-persisted, filters + refresh
+- [CC Background Mode](reference_cc_background_mode.md) -- pythonw + boot-bg.bat + VBS shim, logs to .tmp/cc.log, subprocess CREATE_NO_WINDOW patch suppresses child cmd flashes
+- [Schedule chat vs Agent chat](reference_schedule_chat_vs_agent_chat.md) -- two CC chat endpoints compared: per-tab narrow brand chat vs shared full-skills agent
+- [JS Regex Char Class](feedback_js_regex_char_class.md) -- `-` inside `[ ]` is a range op; `[-:--]+` errors; place `-` first/last or escape; parse-check with `node -e "new Function(fs)"` before commit
+- [CC Sidebar Collapse](project_cc_sidebar_collapse.md) -- chevron toggle, localStorage persistence, font-size:0 trick avoids per-nav-item edits
+- [Post-Ship Scope Drift](feedback_post_ship_scope_drift.md) -- after a feature ships, pause before stacking another build session; use it in real workflow first
+- [WF3a Feed Publish Unblocked](feedback_wf3a_unblocked.md) -- CLAUDE.md "blocked on Meta verification" note is stale; PAGE_ACCESS_TOKEN has pages_manage_posts scope, feed publish works
+- [SEO/GEO/AEO Setup Plan](project_seo_geo_aeo_setup.md) -- 3-phase scope for duberymnl.com: meta+schema+sitemap (P1), FAQ page (P2), off-site (P3); nice-to-have not priority
+- [Video Dissection Method Validated](project_video_dissection_validated.md) -- 2026-05-19 dissection → recreate test hit ~80% on first pass; `/dissect-video` skill promotion unblocked
+- [Studio Tunnel](reference_studio_tunnel.md) -- studio.duberymnl.com → localhost:3002, permanent in ~/.cloudflared/config.yml for Hyperframes Studio previews
+- [No Skeleton Reskin](feedback_no_skeleton_reskin.md) -- adapting a proven pattern means designing a new skeleton from the new brand's reality, not swapping content into the source's beat structure
+- [DuberyMNL Trailer v1](project_dubery_trailer_v1.md) -- 8-scene Dubery-native motion-graphics trailer (Hyperframes + GSAP), RA-approved direction 2026-05-20
+- [Agent SDK Credits June 15 2026](reference_agent_sdk_credits_june15.md) -- separate $20/$100/$200 credit pool for `claude -p` + SDK + Code GH Actions; full API rates; hard-fail by default
+- [Agent SDK Credit Inventory](project_agent_sdk_credit_inventory.md) -- which RA systems will/won't bill against new pool; 4 affected (CC, KB, arabelle bot, moderator), 7 safe (chatbot/Worker/Rasclaw/etc)
+- [Rasclaw --channels Billing Ambiguous](feedback_rasclaw_channels_billing_ambiguous.md) -- `claude --channels` not explicitly covered in Anthropic SDK credit docs; confirm before June 15
+- [Order TG Recovery Milestone](project_order_tg_recovery.md) -- 2026-05-19/20 -- Apps Script sendSms bug fixed; **P2,495 weekend revenue recovered** (Sean P1,497 + Jeff P998 both out for delivery 5/20); v3 site validated as real conversion channel
+- [RedFlash PH](project_redflash_ph.md) -- fictional Manila tattoo illustrator persona for DuberyMNL brand lore; neo-traditional style, first used Rasta Red art post 2026-05-19
+- [Rasta Red Carousel (Template A)](project_carousel_rasta_red.md) -- 6 slides generated 2026-05-17, pending RA visual review; copy brief at .tmp/
+- [Vertex Prompt JSON Format](feedback_vertex_prompt_json_format.md) -- generator needs top-level "prompt" key in JSON; nested spec alone = empty prompt + ERROR exit
+- [CC Video Tab](project_cc_video_tab.md) -- Veo 3.1 generation UI in CC; pipeline, flags, costs, quirks (path normalization, multipart upload, template cache)
+- [Vercel Deploy via Git Only](feedback_vercel_deploy_cloudflare.md) -- `vercel --prod` CLI gives UNKNOWN/0ms builds behind CF proxy; always deploy via `git push`
+- [Price Must Update Two Files](feedback_price_two_files.md) -- price changes need both knowledge_base.py AND conversation_engine.py (4 hardcoded spots)
+- [Google OAuth Revoke Fix](feedback_google_oauth_revoke.md) -- refresh token revokes ~6 months inactivity; re-auth via InstalledAppFlow; last: 2026-05-15
+- [Team Faith Dashboard](project_team_faith_dashboard.md) -- React scorecard dashboard for Informdata team (April 2026, frozen historical); source file, formulas, PDF pipeline. Active team work moved to Team Jonnah May MTD.
 - [Verify Data Before Reporting](feedback_verify_data_before_reporting.md) -- always query source JSON before writing any number in a report; never estimate or recall from memory
 - [PDF Page Break Control](feedback_pdf_page_breaks.md) -- break-inside:avoid on sections/tables/tr + h2 section wrapping; prevents content cuts in playwright PDFs
 - [Table min-width for mobile scroll](feedback_table_min_width_mobile.md) -- overflow-x-auto alone causes column collapse; table needs explicit min-width
@@ -9,7 +40,9 @@
 - [Cloudflare Pages Deploy](reference_cloudflare_pages_deploy.md) -- wrangler CLI deploy; --branch main required for production URL; team-faith.pages.dev live
 - [Tooltip Fixed Positioning](feedback_tooltip_fixed_positioning.md) -- use position:fixed + JS bounding rect for tooltips; CSS group-hover purged by Tailwind JIT, React state clipped by parent overflow
 - [Meta Catalog Automation](project_meta_catalog.md) -- 11 products live in FB catalog via Graph API; token + IDs + automation opportunities documented
-- [PHOTOBOX Reels Pipeline](project_photobox_reels.md) -- Hyperframes FB Reels workflow; Reel #1 keira-birthday previewing localhost:3002; render command + brand colors + next reels
+- [Meta Saved Audience Targeting Fix](feedback_meta_saved_audience_targeting.md) -- saved_audiences ID invalid in API; fetch + store full targeting dict in presets marketing.json
+- [Meta requests Comma Encoding](feedback_meta_requests_comma_encoding.md) -- Meta metric param needs literal commas not %2C; use urlencode(..., safe=',')
+- [CC CRM Tab](project_cc_crm_tab.md) -- CRM tab wired: /api/crm/* routes + Meta page analytics live; 33 leads, 1 order, 2,098 followers
 - [Fidelity Anchor Verbatim](feedback_fidelity_anchor.md) -- exact "no drift" anchor, final item in required_details every v3 prompt; wired into dubery-fidelity-prompt SKILL.md
 - [Informdata Dashboard Project](project_informdata_dashboard.md) -- CRIM HTML dashboard + agent productivity report; Quality click → errors per TM; Active Time replaces Downtime
 - [Informdata Actual Work Time = Downtime Inverse](feedback_informdata_actual_work_time.md) -- Actual Work Time % + Downtime % = 1.000 always; no true attendance metric in this Excel
@@ -49,13 +82,13 @@
 - [CRM ADC Scope Issue](feedback_crm_adc_scope.md) -- ADC lacks Sheets scope on Windows; gate to K_SERVICE (Cloud Run only), always use token.json locally
 - [Store Handoff Persists](feedback_store_handoff_persist.md) -- handoff_flagged=True in conversation_store.json survives restarts; silently blocks sender IDs; check file before debugging "no reply"
 - [TG Poll 409 Claude Plugin](feedback_tg_poll_409_claude_plugin.md) -- Claude Code Telegram plugin holds long-poll on same bot token; monitor /restart+/status only work when Claude Code is closed
+- [TG 409 Diagnosis 2026-05-21](feedback_tg_409_diagnosis_2026_05_21.md) -- root cause: monitor.py + Rasclaw plugin both polling @Rasclaw01_bot; 5283 backoffs over 6 days; RESOLVED option 4 -- monitor.py TG poll thread dropped (commit 301820d)
 - [Sheets execute() No Timeout](feedback_sheets_execute_timeout.md) -- googleapiclient .execute() hangs forever on SSL/network issues; background writes, timeout reads with concurrent.futures
 - [Gemini Token Limit](feedback_gemini_token_limit.md) -- 800 tokens truncates chatbot JSON; use 1500+
 - [Google API cache_discovery Hang](feedback_google_api_cache_discovery.md) -- cache_discovery=False hangs on restart; use default + pre-warm at startup
 - [CSS display overrides hidden](feedback_css_hidden_display_override.md) -- display:grid/flex beats [hidden] attribute; add [selector][hidden]{display:none !important} for every JS-toggled element
 - [Grid Item min-width 0](feedback_grid_min_width_zero.md) -- CSS grid children default to min-width auto; wide content pushes tracks wider than fr share, overflow-x doesn't kick in until you set min-width 0
 - [Thumbnail Grid Use grid-auto-rows](feedback_thumbnail_grid_auto_rows.md) -- aspect-ratio unreliable on grid items in nested flex layouts; use grid-auto-rows: Npx + height 100% instead
-- [Node Playwright When Python Broken](reference_node_playwright_fallback.md) -- npx playwright@1.48.0 via Node when python playwright has broken greenlet DLL on RA's Windows
 - [Pseudo-element Opacity Inherit](feedback_pseudo_element_opacity_inherit.md) -- ::before on flow-sections inherits opacity, fights JS fade, causes flicker
 - [Vercel Preview > CF Tunnel](feedback_vercel_preview_over_cf_tunnel.md) -- CF quick tunnels 404 when named creds exist; use vercel --yes for phone testing
 - [DuberyMNL v2 Brand Identity](project_dubery_v2_brand_identity.md) -- "Made for the view", outdoor life, copy locked session 135
@@ -66,6 +99,8 @@
 Fresh start as of 2026-04-03. Context lives in EA-brain (~/projects/EA-brain/context/).
 
 ## Behavioral Rules (feedback)
+- [User PATH Wipe Recovery](feedback_user_path_wipe_2026_05_20.md) -- HKCU\Environment\Path can vanish; setx Python312+npm dirs; VBS shim for detached cmd with TTY
+- [Bash Login PATH Inheritance](feedback_bash_login_path_inheritance.md) -- `bash -l -c "claude ..."` from a .bat doesn't reliably inherit Windows user PATH; use full binary paths from cmd, skip the bash hop
 - [Savepoint Sweet Spot](feedback_savepoint_sweetspot.md) -- call /savepoint at 75% context (~150k) on Sonnet 200k
 - [Settings Self-Modification Auth](feedback_settings_self_modification.md) -- settings.json edits need explicit RA auth each session
 - [autoCompactWindow Setting](reference_autocompact_window.md) -- token count field (100k-1M), currently 185k
@@ -130,6 +165,10 @@ Fresh start as of 2026-04-03. Context lives in EA-brain (~/projects/EA-brain/con
 - [UGC Pipeline Rename](reference_ugc_pipeline_skill.md) -- /ugc-pipeline replaces archived /dubery-v3-pipeline
 - [Brand Pipeline Research](project_brand_pipeline_research.md) -- Knockaround-inspired direction + duberymnl.com v2 in backlog
 - [Veo Prompting](feedback_veo_prompting.md) -- motion-only, negative as nouns, last_frame works
+- [Veo ref-image not supported](feedback_veo_ref_image_not_supported.md) -- RawReferenceImage is Imagen-only; --ref-image removed from generate_videos.py
+- [Veo RAI not faces](feedback_veo_rai_not_faces.md) -- RAI filter does NOT blanket-block faces; failure was image/prompt-specific
+- [Veo RAI composition trigger](feedback_veo_rai_composition.md) -- wide-angle crouching + athletic wear blocks; studio portraits + text overlays pass
+- [Veo 8-second prompt structure](feedback_veo_8sec_prompt.md) -- beat-by-beat full-timeline prompt prevents Veo from improvising after initial motion
 - [Chatbot Architecture](feedback_chatbot_architecture.md) -- stdin piping, keyword indexing
 
 ## Claude Code Architecture (feedback)
@@ -147,7 +186,7 @@ Fresh start as of 2026-04-03. Context lives in EA-brain (~/projects/EA-brain/con
 - [RAS Creative Positioning (LOCKED)](project_positioning_locked.md) -- DO NOT DRIFT
 - [RAS Creative Niches](project_ras_creative_niches.md) -- solar primary, strict DuberyMNL gate
 - [RAS Creative Prospects](project_ras_creative_prospects.md) -- 2A Optical (MY eyewear) + Vision Express PH; same gate: v2 shipped + 1-week production data
-- [Messenger-First Strategy](project_messenger_strategy.md) -- no-price ads, comment-triggered DMs
+- [Dual-Channel Strategy](project_messenger_strategy.md) -- both Messenger + website active; Pixel 1513349880261420 + Clarity wts41ahyih installed 2026-05-20, full funnel verified
 - [Content Skill Iterations](project_content_skill_iterations.md) -- v2 active, v1 parked
 - [v2 Skills Validated](project_v2_skills_validated.md) -- RA-confirmed A/B session 107
 - [Brand Content Pipeline](project_brand_pipeline.md) -- 6 scenarios, testing phase
@@ -268,7 +307,7 @@ Fresh start as of 2026-04-03. Context lives in EA-brain (~/projects/EA-brain/con
 - [Chatbot Image Bank v2](reference_chatbot_image_bank_v2.md) -- bank-driven, 44 picks, upload_bank_to_drive.py + auto-load in knowledge_base.py
 - [FB Stories Pool](reference_fb_stories_pool.md) -- 74 picks, 4h rotation, story_rotation.py reads JSON dynamically
 - [Conversational FAQ](feedback_conversational_faq.md) -- FAQ answers must sound like a shop assistant, not a spec sheet
-- [Live Chatbot Code Path](reference_chatbot_live_path.md) -- cloud-run/ is live, tools/chatbot/ is stale
+- [Live Chatbot Code Path](reference_chatbot_live_path.md) -- chatbot/ is live, tools/chatbot/ is stale
 - [Chatbot Auto-Start Tasks](reference_chatbot_autostart.md) -- DuberyMNL-Chatbot + DuberyMNL-Tunnel at-logon, no admin
 - [Chatbot Admin Endpoints](reference_chatbot_admin_endpoints.md) -- /flag, /release, /mark-sale, /status, /chat-test, /conversations v2 + env vars
 - [Chatbot Ad Registry](reference_chatbot_ad_registry.md) -- chatbot/ad_registry.json maps Meta ref tags to opener hints (per-variant/per-series/generic)
@@ -286,4 +325,7 @@ Fresh start as of 2026-04-03. Context lives in EA-brain (~/projects/EA-brain/con
 - [Belle Telegram](project_belle_telegram.md) -- PLANNED, personal EA for Arabelle
 - [Website Building Workflow](../../../../projects/EA-brain/references/summaries/jack-roberts-10k-websites.md) -- Firecrawl → 5 questions → Relume → Claude Code
 - [Jono 4 Tools 10x Websites](../../../../projects/EA-brain/references/summaries/jono-4-tools-10x-claude-websites.md) -- Three.js + Spline + Kling 3.0 before/after + Seedance; use kie.ai direct not Higgsfield
+- [Higgsfield AI Overview](../../../../projects/EA-brain/references/summaries/higgsfield-ai-overview.md) -- $29/mo Creator creative platform; Marketing Studio (ugc/tv_spot/product_review presets); Cinema Studio 3.5 (AICast characters); MCP for Claude; Supercomputer agent (early/buggy). Best DuberyMNL use: ugc + tv_spot ad formats. Not in stack yet.
+- [Higgsfield Trial + Install](reference_higgsfield_trial.md) -- Free=50cr watermarked 720p; Creator=$29/mo 500cr; install: `/plugin marketplace add higgsfield-ai/skills`; test ugc+tv_spot modes first
+- [Seedance via kie.ai (Jay E)](../../../../projects/EA-brain/references/summaries/jay-seedance-claude-skill.md) -- ByteDance video model; beats Veo3/Kling/Sora on smooth rotation; kie.ai access already live; Pro 720p 10s = 410cr; image-to-video + motion graphics strongest use cases
 - [Jordan Platten 3 AI Systems](../../../../projects/EA-brain/references/summaries/jordan-platten-3-ai-systems.md) -- revenue-distance rule, retainer pricing

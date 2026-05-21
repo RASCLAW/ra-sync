@@ -2,7 +2,7 @@
 name: DuberyMNL Command Center
 description: Local web dashboard + persistent Claude Agent SDK backend. Phase 1 MVP live on localhost:8090. Portfolio + personal ops + future client template.
 type: reference
-related: project_command_center_phase1_complete.md, reference_claude_agent_sdk_install.md, project_rasclaw_telegram.md, feedback_register_rebinds_bug.md, project_command_center_phase2_scoping.md, feedback_form_always_randomizes.md
+related: project_command_center_phase1_complete.md, reference_claude_agent_sdk_install.md, project_rasclaw_telegram.md, feedback_register_rebinds_bug.md, project_command_center_phase2_scoping.md, feedback_form_always_randomizes.md, project_schedule_v2_shipped.md, project_image_bank_overhaul.md, reference_schedule_chat_vs_agent_chat.md, reference_cc_background_mode.md
 originSessionId: 65f454a5-f69c-4ea7-9925-80aa4bafc8cc
 ---
 ## What it is
