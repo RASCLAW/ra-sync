@@ -2,7 +2,7 @@
 name: CSS display overrides [hidden] attribute
 description: Elements with explicit CSS display:grid/flex ignore the HTML hidden attribute -- must add [selector][hidden] { display:none !important }
 type: feedback
-related: [project_v3_order_redesign.md, project_dubery_v3_landing.md]
+related: [project_dubery_v3_landing.md, project_v3_order_enhancements.md]
 originSessionId: 1b5360c5-48d1-48bd-a7d7-69594b1ba550
 ---
 CSS `display: grid` or `display: flex` on an element overrides the UA stylesheet's `display: none` that the `[hidden]` HTML attribute normally produces. The element stays visible even when `el.hidden = true` is set in JS.

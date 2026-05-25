@@ -5,6 +5,8 @@ type: feedback
 related:
   - project_v3_fidelity_approach.md
   - feedback_prodref_drives_direction.md
+  - feedback_kraft_sidecar_for_fidelity.md
+  - project_iteration_reduction_idea.md
 originSessionId: eed28772-6b1b-4570-aa8e-6c411a942314
 ---
 Always append this exact verbatim as the **final item** in `required_details` in every v3 prompt JSON:

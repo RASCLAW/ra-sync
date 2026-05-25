@@ -1,55 +1,52 @@
 ---
 name: session-resume-pointer
 description: Latest savepoint snapshot -- read first on any new session to pick up where we left off
-metadata: 
+metadata:
   node_type: memory
   type: project
-  originSessionId: d328227d-c1ef-40e6-9cfe-488271df6193
 ---
 
 # Resume Pointer
 
-**Session:** 169 -- schedule-v2-shipped (2026-05-21)
-**Status:** /savesession run — committed locally, NOT yet pushed. Run `/sendit` to ship.
+**Session:** 174 -- cc-dashboard-overhaul + marketing-tab-v2 (2026-05-25)
+**Status:** /savepoint+ -- in-flight. Big CC upgrade landed + Marketing tab analytics rewrite landed; nothing committed yet.
 
 ## Current topic
-Schedule v2 (Calendar + AI Suggest chat) + Image bank overhaul (favorites/archive/delete/thumbs/filters/drafts) + CC background mode. All landed in one session.
+Major dashboard leveling-up session. **First half:** CRM tab is now production-ready (5 tiles + click-detail + Page Analytics live), Schedule tab gained queue-card detail modal with edit support + FB-style preview + column collapse + zoom slider, AI Suggest agent rewritten as a thinking skill with chat history persistence + emoji picker, Worker first-touch gate shipped. Meta token upgraded with 13 scopes including `read_insights`. **Second half (mid-session add):** Marketing tab rewritten from staging-only UI to analytics dashboard — 6 sections (snapshot strip / adsets / sortable ads leaderboard with creative thumbnails / Pixel funnel / 14d SVG trend / page+attention split). Two new standalone pullers (`pull_live_meta.py` + `pull_pixel_stats.py`). Single `/api/marketing/summary` cache-read endpoint + manual `/api/marketing/refresh` button. Staging UI preserved in collapsed `<details>`. No mutation endpoints — refresh is read-only.
 
-## What shipped
-- All 21 tasks from `.tmp/plan_v2.md` — Schedule v2 fully live at `http://localhost:8090/#schedule`
-- Image bank now 570 images (was 214), thumbs ~106× smaller, server-persisted favorites/archive, soft-delete to `.tmp/bank_trash/`, drafts surfaced
-- CC runs hidden via `pythonw.exe` + `boot-bg.bat` + `C:\tmp\launch-cc.vbs`; logs tail to `.tmp/cc.log`
-- Subprocess `CREATE_NO_WINDOW` patch in `command-center/app.py` suppresses child cmd flashes
-- Content Gen got a 5th preset chip + auto-injects upcoming PH holidays into every Direction prompt
+## Where we left off
+All work in place + tested locally:
+- CC running healthy on :8090. CRM tab shows 7 orders / P5,737 / 11 units (30d) / 2 orders (24h). Page Analytics tiles live with real numbers (283K reach / 8.7K engagements / 3.9K page views).
+- Schedule tab queue cards click-to-detail working; Edit upcoming posts validated end-to-end.
+- AI Suggest prompt rewrite live; new conversations save to `.tmp/sched_chat_history/`.
+- Worker `dubery-chatbot-fallback` v `625f9589` deployed.
+- Sheet writes done: Jeffrey Arragona DELIVERED, Apollo Planas CANCELED.
+- **Marketing tab v2 live + tested:** all 4 pullers run cleanly via Refresh; live data shows P882 spend / 251 LPV / 4 messages / 1 Pixel purchase across 24 active+spending ads with thumbnails. No pause candidate currently meets threshold; top spender = bespoke-outback-red-graphic-a at P2.01/LPV. Pixel funnel: PV 1309 / VC 137 / AC 9 / Purchase 4.
+
+**Nothing committed yet.** Next sensible action: `/closeout` or `/sendit` to lock the session.
+
+## Open decisions parked for next session
+- Install cloudflared as Windows service (`cloudflared service install`) so it survives reboots. Currently using `Start-Process -WindowStyle Hidden`.
+- Enable `message_echoes` subscription on the Page so the existing echo handler in `messenger_webhook.py:1151` auto-flags handoff when RA types in Page Inbox. One curl + scope check.
+- Meta Pixel install on duberymnl.com + v3 site (separate workstream; not blocking).
+
+## Key context for resume
+- 5 new memories this session: [[cc-dashboard-overhaul-2026-05-25]], [[ai-suggest-skill-rewrite-2026-05-25]], [[meta-use-cases-picker]], [[thumb-url-for-grids]], [[cc-marketing-tab-v2]], [[feedback-meta-pixel-stats-shape]].
+- `.env` swapped to new Page token (13 scopes); old token backed up at `.env.bak-20260524-012912`.
+- v3 Orders sheet is now the single source of truth for closed sales ([[orders-consolidation-2026-05-24]] for the consolidation context). CRM > Orders tab is deprecated.
+- AI Suggest is now SKILL-shaped not template-shaped -- don't regress to "3 fixed-menu options" if RA asks for caption help; the agent now leads with image-read then 5-8 options whose labels emerge from the image.
+
+## In flight
+- Nothing running. CC + chatbot + cloudflared all healthy.
 
 ## Verification
-- Schedule chat smoke: `curl -X POST /api/schedule/chat` returns "SCHED_OK" and brand-aware caption options
-- Calendar API: `curl /api/schedule/calendar?month=2026-05` returns Labor Day, Mother's Day, posts on May 20
-- Image bank: `/api/schedule/image-bank` returns 570 items (384 ready + 186 drafts)
-- Thumb endpoint: 1.5MB PNG → 15KB JPEG confirmed
-- 1 RA-scheduled post in queue: `feed-20260521-1159-001`, fires at 12:00 PM PHT cron tick
+- `curl -s http://127.0.0.1:8090/api/crm/summary` returns `{"total_orders":7,"total_revenue":5737.0,"orders_today":2,"units_sold_30d":11,"total_leads":41,...}`
+- `curl -s http://127.0.0.1:8090/api/analytics/page` returns 5 keys (fans, talking_about, page_impressions_unique, page_post_engagements, page_views_total) with non-empty data
+- `curl -s -X POST http://127.0.0.1:8090/api/schedule/edit -d '{}'` returns `{"ok":false,"error":"missing id"}` (proves endpoint is live)
+- `curl -s http://127.0.0.1:8090/api/schedule/chat/sessions` returns `{"ok":true,"sessions":[]}` (no past brainstorms yet)
+- Worker pass-through: `curl -s https://chatbot.duberymnl.com/status` returns chatbot stats JSON
 
 ## Next action
-- RA to verify the 12:00 PM PHT post lands on the FB Page
-- RA to test favorites/archive/delete on real reject images
-- Run `/sendit` to push + backup + sync Drive when AFK-ready
-- Eventually swap Startup-folder shortcut from visible `boot.bat` to hidden VBS-shim
-
-## Key files (this session)
-- `command-center/app.py` — 5 new Schedule v2 endpoints + thumb endpoint + favorites/archive/delete + subprocess no-window patch
-- `command-center/static/js/schedule_calendar.js` — NEW (calendar module)
-- `command-center/static/js/schedule_chat.js` — NEW (chat module)
-- `command-center/static/js/schedule.js` — sub-tab switching + image bridge
-- `command-center/static/css/main.css` — calendar + chat + bank styles
-- `command-center/templates/tabs/schedule.html` — 3-panel structure + lightbox + filters
-- `command-center/templates/shell.html` — script tag cache bumps
-- `command-center/boot-bg.bat` — NEW (hidden launcher)
-- `command-center/static/js/content_gen.js` — upcoming-holidays auto-inject
-- `command-center/templates/tabs/content_gen.html` — new preset chip
-- `references/ph_holidays_2026.json` — NEW
-- `references/ph_events_manual.json` — NEW
-- `C:\tmp\launch-cc.vbs` — updated to hidden mode
-- `README.md` + `PROJECT_LOG.md` — session 169 entries
-- 5 new memories + backlinks updated; MEMORY.md index updated
-- `decisions/log.md` — 5 new decision entries
-- `~/projects/EA-brain/context/current-priorities.md` — session 169 ship note prepended
+- If RA wants to ship this round: run `/closeout` (commit + push + backup + sync) or `/sendit` if savesession was already done locally.
+- If RA wants more iteration: pick from open decisions above, or whatever's next on his plate.
+- Stale CLAUDE.md "WF3a blocked on Meta verification" line still un-fixed (see [[feedback_wf3a_unblocked]]); separate cleanup item.

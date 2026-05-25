@@ -15,7 +15,7 @@ FAQ answers in the chatbot knowledge base must be written as natural conversatio
 
 **Why:** RA tested the chatbot and flagged pricing/shipping replies as "templated" -- Gemini was parroting spec-sheet FAQ entries verbatim. Conversational source material produces conversational replies.
 
-**How to apply:** When writing or updating FAQ entries in `cloud-run/knowledge_base.py`, write them as if a real Filipino shop assistant is explaining to a customer. Use full sentences, casual tone, "po" where natural. Example:
+**How to apply:** When writing or updating FAQ entries in `chatbot/knowledge_base.py`, write them as if a real Filipino shop assistant is explaining to a customer. Use full sentences, casual tone, "po" where natural. Example:
 
 BAD: "COD (Metro Manila only), GCash, or bank transfer/InstaPay. For provincial orders, prepaid only."
 

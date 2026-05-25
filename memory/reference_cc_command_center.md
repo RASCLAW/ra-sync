@@ -7,13 +7,15 @@ related:
   - reference_cloudflare_tunnel_preview.md
   - feedback_cc_dual_instance.md
   - feedback_flask_template_cache.md
+  - project_cc_crm_tab.md
+  - project_feed_scheduler.md
 originSessionId: 361cc13d-c8d6-4759-8794-444717d74e43
 ---
 Command Center is accessible externally via Cloudflare tunnel at `cc.duberymnl.com`.
 
 **Auth URL (bookmark on phone):**
 ```
-https://cc.duberymnl.com/auth/6458c2c7a50e8f627042f7b22671ccf5
+https://cc.duberymnl.com/auth/a9bdfa9a243717d5a7b19eea2b8c9a84
 ```
 Visit once → sets session cookie → redirects to dashboard. After that, `https://cc.duberymnl.com` works directly.
 
@@ -24,7 +26,7 @@ Visit once → sets session cookie → redirects to dashboard. After that, `http
 **Port:** `:8090` (fixed via `COMMAND_CENTER_PORT` env var, default 8090).
 
 **Env vars added (session 138):**
-- `CC_SECRET_TOKEN` = `6458c2c7a50e8f627042f7b22671ccf5` — secret URL token
+- `CC_SECRET_TOKEN` = `a9bdfa9a243717d5a7b19eea2b8c9a84` — secret URL token
 - `FLASK_SECRET_KEY` = `f790b0cffd7401078...` — Flask session signing key
 
 **Config:** `~/.cloudflared/config.yml` has `cc.duberymnl.com → http://localhost:8090` ingress.

@@ -2,7 +2,7 @@
 name: Command Center Phase 2 Scoping
 description: Session 131 scoping state for Content Gen tab. Pill form locked, two-randomizer wrinkle identified, three-part plan sketched but not written. Next session picks up here.
 type: project
-related: project_command_center_phase1_complete.md, reference_command_center.md, reference_pipeline_skill_chain.md, feedback_form_always_randomizes.md
+related: project_command_center_phase1_complete.md, reference_command_center.md, reference_pipeline_skill_chain.md, feedback_form_always_randomizes.md, project_inspiration_batch_ingestion.md, feedback_bespoke_concept_paste_wins.md
 originSessionId: a1405cce-bffb-44b2-985e-90425a6b5c11
 ---
 ## Status

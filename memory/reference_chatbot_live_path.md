@@ -1,6 +1,6 @@
 ---
 name: Live Chatbot Code Path
-description: Live chatbot runs from chatbot/ (project root) not tools/chatbot/. Any live pricing/KB/prompt edits must target chatbot/. Renamed from cloud-run/ in session 127 (2026-04-16).
+description: Live chatbot runs from chatbot/ (project root) not tools/chatbot/. Any live pricing/KB/prompt edits must target chatbot/. Renamed from chatbot/ in session 127 (2026-04-16).
 type: reference
 related:
   - project_chatbot_recovery_complete.md
@@ -22,7 +22,7 @@ Both directories contain near-identical file trees (`knowledge_base.py`, `conver
 ```bash
 curl https://chatbot.duberymnl.com/status
 ```
-Then check the PID of python.exe running messenger_webhook.py — its working directory is `chatbot/` (formerly `cloud-run/` prior to 2026-04-16 rename).
+Then check the PID of python.exe running messenger_webhook.py — its working directory is `chatbot/` (formerly `chatbot/` prior to 2026-04-16 rename).
 
 **Why:** Session 122 (2026-04-15) pricing shift (DUBERY50 → bundle push at P599/P1099) initially edited only tools/chatbot/ and had no customer-facing effect. The fix required targeting chatbot/. Keep this distinction top of mind for any chatbot task.
 

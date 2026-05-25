@@ -27,7 +27,7 @@ powershell -NoProfile -ExecutionPolicy Bypass -File check.ps1
 
 **Why:** The `schtasks.exe /Create` verb appears to require elevation for some task types even when creating a task that runs as the current user. From Git Bash (non-elevated), it fails with `ERROR: Access is denied.`
 
-**How to apply:** Use PowerShell's `Register-ScheduledTask` cmdlet instead. With `-RunLevel Limited -LogonType Interactive`, it creates user-scoped at-logon tasks with no admin prompt. Working pattern lives in [cloud-run/install-autostart.ps1](cloud-run/install-autostart.ps1) — copy it as a template when adding more at-logon tasks.
+**How to apply:** Use PowerShell's `Register-ScheduledTask` cmdlet instead. With `-RunLevel Limited -LogonType Interactive`, it creates user-scoped at-logon tasks with no admin prompt. Working pattern lives in [chatbot/install-autostart.ps1](chatbot/install-autostart.ps1) — copy it as a template when adding more at-logon tasks.
 
 ## 3. Default `open()` in Python uses cp1252 on Windows, chokes on UTF-8 files
 

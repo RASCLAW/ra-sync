@@ -12,7 +12,7 @@ originSessionId: e90a13f6-dc4b-4c54-a15a-1f2aab344611
 ---
 **Worker:** `dubery-chatbot-fallback`
 **Route:** `chatbot.duberymnl.com/*`
-**Deployed via:** `cd cloud-run/cloudflare-worker && npx wrangler deploy`
+**Deployed via:** `cd chatbot/cloudflare-worker && npx wrangler deploy`
 **Cloudflare account:** `sarinasmedia+rasclaw@gmail.com`
 
 **How it works (session 125 rewrite):**
@@ -39,5 +39,5 @@ originSessionId: e90a13f6-dc4b-4c54-a15a-1f2aab344611
 **Env vars (wrangler.toml):** `VERIFY_TOKEN`, `FALLBACK_MESSAGE`, `TG_CHAT_ID`
 **KV binding:** `FAQ_DEDUP` (id `3ff16e193cd2431eb770cd3bab232f58`)
 
-**Files:** `cloud-run/cloudflare-worker/worker.js` + `wrangler.toml`
-**Unit test:** `cloud-run/cloudflare-worker/test-classifier.mjs` (34 scenarios)
+**Files:** `chatbot/cloudflare-worker/worker.js` + `wrangler.toml`
+**Unit test:** `chatbot/cloudflare-worker/test-classifier.mjs` (34 scenarios)

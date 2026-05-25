@@ -6,6 +6,7 @@ related:
   - project_chatbot_recovery_complete.md
   - reference_chatbot_live_path.md
   - reference_cloudflare_worker_fallback.md
+  - feedback_wf3a_unblocked.md
 originSessionId: ec69ca92-4b44-470f-a2c1-88e55b8f2d58
 ---
 **Milestone:** First real customer order closed end-to-end through the DuberyMNL chatbot.

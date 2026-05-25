@@ -13,7 +13,7 @@ originSessionId: b42c0c90-aeb4-4688-9e25-4dc8424efb04
 
 ## Pre-flight (before starting parallel sessions)
 
-- **Pick orthogonal workstreams per window.** The #1 rule. Good split: Window A = chatbot infra, Window B = content generation, Window C = strategy/memory. Bad split: 3 windows all editing `cloud-run/knowledge_base.py`. If two windows share a topic, you'll collide.
+- **Pick orthogonal workstreams per window.** The #1 rule. Good split: Window A = chatbot infra, Window B = content generation, Window C = strategy/memory. Bad split: 3 windows all editing `chatbot/knowledge_base.py`. If two windows share a topic, you'll collide.
 - **Run loadout in every window.** Each session gets its own tunnel check + orphan audit. The `pc-status.ps1 -SessionsOnly` output shows current session count.
 - **Name sessions early** via `/rename` (e.g. "chatbot-recovery", "content-pipeline", "niche-strategy"). Makes attribution cheap when something goes wrong — `pc-status` shows meaningful labels instead of PIDs.
 
@@ -89,6 +89,6 @@ Force yourself to single-window for:
 
 ## Tonight's scorecard (sessions 105/106/107 on 2026-04-12)
 
-**Worked:** distinct topics, no force-pushes, all 3 session entries survived in PROJECT_LOG.md, multi-session safety rule caught me before touching cloud-run/.
+**Worked:** distinct topics, no force-pushes, all 3 session entries survived in PROJECT_LOG.md, multi-session safety rule caught me before touching chatbot/.
 **Lucky:** push ordering worked out, MEMORY.md updates didn't collide on same lines, no duplicate memory filenames.
 **Could improve:** announce workstream-per-window explicitly at start, close sequentially not simultaneously, keep a mental map of file ownership.

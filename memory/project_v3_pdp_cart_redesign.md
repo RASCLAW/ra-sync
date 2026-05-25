@@ -2,7 +2,7 @@
 name: v3 PDP Cart Redesign
 description: PDP no longer has PII form -- Add to Cart + localStorage cart badge; order page is checkout
 type: project
-related: [project_v3_order_redesign.md, reference_dubery_orders_sheet.md, project_dubery_v3_landing.md, project_v3_order_enhancements.md, feedback_data_field_removal_crash.md]
+related: [reference_dubery_orders_sheet.md, project_dubery_v3_landing.md, project_v3_order_enhancements.md, feedback_data_field_removal_crash.md]
 originSessionId: 4eb6ffb9-b3a9-475e-bde5-b5ff542047ea
 ---
 PDP (`products/item.html`) no longer collects name/phone/address. Replaced with "Add to Cart" button that writes to localStorage and updates a nav badge across all pages.

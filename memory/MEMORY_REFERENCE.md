@@ -1,0 +1,116 @@
+# Reference Index
+
+Tool, API, and config references. Loaded on-demand when the main MEMORY.md points here.
+
+## References (tools, APIs, configs)
+- [Playwright Gallery Scrape](reference_playwright_gallery_scrape.md) -- WebFetch only returns metadata on Behance/Dribbble; use a 40-line Playwright script to grab the real images
+- [VSCode Tunnel](reference_vscode_tunnel.md) -- dubery-dev service, vscode.dev
+- [Backup System](reference_backup_system.md) -- 2026-05-23 audit -- 17 RASCLAW repos + Drive content/secrets/hyperframes-renders; 3 new repos added (ras-projects, informdata-data-analysis, dubery-hyperframes-projects)
+- [/sendit external paths gap](feedback_sendit_external_paths_gap.md) -- 2026-05-23 -- /sendit hardcodes 3 sync targets; new content-producing projects (hyperframes renders, future video) silently miss backup; manual sync_folder.py until config-driven fix lands
+- [Vertex AI](reference_vertex_ai.md) -- ADC auth, Gemini 3.1 Flash, Veo 3.1
+- [gcloud CLI Setup](reference_gcloud_cli.md) -- gcloud SDK auth + ADC unlocks Vertex AI / Veo / Cloud Run; --no-launch-browser fix for Git Bash
+- [Token.json Scopes](reference_token_scopes.md) -- 6 scopes (drive, sheets, gmail.modify, gmail.settings.basic, calendar, youtube); never narrow on refresh
+- [YouTube Data API](reference_youtube_api.md) -- API enabled, 10K units/day free quota; complements /youtube skill
+- [Cloudflare Tunnel & DNS](reference_cloudflare_migration.md) -- chatbot.duberymnl.com, SSL pending
+- [CF Tunnel as Preview Host](reference_cloudflare_tunnel_preview.md) -- review/tag subdomains map to local ports; use as sandbox preview without Vercel auth
+- [Meta Verified](reference_meta_verified.md) -- Business Verification approved
+- [PH Customer Shorthand](reference_ph_customer_shorthand.md) -- "hm"="how much"
+- [Claude CLI](reference_claude_cli.md) -- npm global, system-prompt-file for long prompts
+- [Product Refs](reference_product_refs.md) -- multi-angle Bandits, 4 angles each
+- [Product Finish Table](reference_product_finish.md) -- 3 glossy, all others matte
+- [Chatbot Image Bank Schema (v1)](reference_chatbot_image_bank.md) -- 48 images, per-image caption schema (session 106; superseded by bank-driven v2 below)
+- [DuberyMNL CRM Sheet](reference_dubery_crm_sheet.md) -- 4 tabs, wired to chatbot
+- [Meta Attachment Caching](reference_meta_attachment_caching.md) -- pre-upload for fast sends
+- [Dubery Supplier Site](reference_dubery_supplier_site.md) -- SKU mapping, 80+ images
+- [Telegram Send Patterns](reference_telegram_send_patterns.md) -- push text/photo, HTML escaping
+- [Static Map Generation](reference_staticmap_pattern.md) -- OSM tiles, no API key
+- [Rasclaw Mobile Permissions](reference_rasclaw_mobile_permissions.md) -- pre-approved for phone
+- [VSCode Extension Orphan Bug](reference_vscode_extension_orphan_bug.md) -- kill via Stop-Process
+- [Dashboard Moderator](reference_dashboard_moderator.md) -- syncs data + deploys ra-dashboard
+- [Prompt Reviewer Skill](reference_prompt_reviewer_skill.md) -- v2 quality gate
+- [Use Skills for Content](feedback_use_skills_for_content.md) -- never bypass v2 skills with ad-hoc prompts. Skills encode all rules.
+- [Use Reviewer Before Gen](feedback_use_reviewer_before_gen.md) -- /dubery-prompt-reviewer mandatory before every Vertex AI spend.
+- [Batch 001 Fidelity](project_batch001_fidelity.md) -- 9/11 PASS. Outback Blue + Bandits Blue are risky products.
+- [v3 Fidelity Approach](project_v3_fidelity_approach.md) -- product-as-locked-asset JSON schema. Replaces v2 narrative prompts. Validated on Outback Blue ~15 scenes.
+- [Prodref Drives Direction](feedback_prodref_drives_direction.md) -- ref photo angle must match prompt direction. Never conflict.
+- [Always Use -1 Prodref](feedback_prodref_always_1.md) -- hardcode to -1.png angle for all products, no randomization
+- [Oversized Inflates Product](feedback_oversized_inflates.md) -- don't use "oversized" in proportions, causes disproportionate rendering.
+- [Color-Free Specs](feedback_color_free_specs.md) -- no color words in required_details, Gemini reads from photo
+- [Angle-Aware Details](feedback_angle_aware_details.md) -- filter required_details by what's visible in the chosen angle
+- [Fidelity Prefix](feedback_fidelity_prefix.md) -- updated mandatory prefix with identity preservation instruction
+- [No Scale-Ref Objects](feedback_no_scale_ref_objects.md) -- avoid newspapers/vinyl/phones next to product, causes oversizing
+- [Camera-Relative Directions](feedback_camera_relative_directions.md) -- left/right/toward camera replaces clock directions
+- [Stripped Prompt Fields](feedback_stripped_prompt_fields.md) -- lighting_logic and objects_in_scene unnecessary
+- [Make/Zapier/n8n Accounts](reference_make_zapier.md) -- free accounts, MCP configs
+- [Competitive Intel](reference_competitive_intel.md) -- automation builder FB posts
+- [career-ops System](reference_career_ops.md) -- scoring + scanner + ATS PDF
+- [Microsoft Clarity + Claude MCP](reference_microsoft_clarity_cro.md) -- free heat maps + session recordings, queryable via Claude connector, pair with UTMs for per-source CRO
+- [Claude Code Routines](reference_claude_routines.md) -- cloud-hosted scheduled agents, 1hr min, 5-25/day; does NOT replace cron/Task Scheduler; first candidate = dashboard moderator
+- [awesome.md Design Templates](reference_awesome_md.md) -- pre-built design-system MD files for site aesthetics, use as duberymnl.com v2 starting spec
+- [Skill Creator Skill](reference_skill_creator_skill.md) -- official marketplace plugin, A/B benchmarks skills quantitatively, install on next major skill revision
+- [Cowork Client Framing ("AI Employees")](reference_cowork_client_framing.md) -- non-technical pitch language for RAS Creative clients + Cowork onboarding as productized service
+- [YouTube Skill](reference_youtube_skill.md) -- /youtube for metadata + transcripts + OAuth (full access, scope-loss warning)
+- [Build Flow System](reference_build_flow.md) -- custom Superpowers: brainstorm > plan > execute > debug > verify
+- [Facebook Stories API](reference_fb_stories_api.md) -- 2-step, no scheduling, 9:16
+- [Apify Setup](reference_apify_setup.md) -- MCP server, $5/mo free
+- [Demo Video Pipeline](reference_demo_video_pipeline.md) -- edge-tts + FFmpeg + Pillow
+- [Portfolio URL](reference_portfolio_url.md) -- ras-portfolio-one.vercel.app/portfolio.html (root redirects to portfolio.html)
+- [Portfolio PDF Screenshot Stitch](reference_portfolio_pdf_screenshot_stitch.md) -- fullPage screenshot → Pillow A4 slice → PDF, pixel-perfect 1.9MB
+- [Upwork AI Image Application](project_upwork_ai_image_application.md) -- proposal + profile update state, ready to submit 2026-04-22
+- [Lint Memory History](reference_lint_history.md) -- last run 2026-04-09, next ~2026-04-23
+- [Chatbot Recovery Complete](project_chatbot_recovery_complete.md) -- LIVE on Cloudflare tunnel + Worker fallback. Steps a-g done, h-i remain.
+- [Kraft Prodref Workflow](reference_kraft_prodref_workflow.md) -- supplier white-bg → kraft-bg prodrefs + sidecar metadata
+- [Fishing/Outdoor Lens Color Guide](reference_fishing_lens_colors.md) -- 7-lens matrix (gray/amber/blue-mirror etc) + polarization test as viral content hook; Blue Mirror = best PH fit
+- [Outback Specs Unified](project_outback_specs_unified.md) -- all 4 Outbacks share D918 identity + generic 3-field spec
+- [UGC_UNBOXING Skipped](feedback_ugc_unboxing_skipped.md) -- dropped from pipeline, branding over-emphasis breaks temple badge
+- [No Hardcoded Examples](feedback_no_hardcoded_examples.md) -- keep skills declarative, no literal example strings
+- [PERSON_WEARING 135mm](feedback_camera_preset_135mm.md) -- 135mm f/2.0 close portrait is the sweet spot
+- [TG Send Helper](reference_tg_send_helper.md) -- Python CLI at ~/.claude/scripts/tg-send.py, auto-allowed
+- [Image Gen Auto-Versioning](feedback_no_overwrite_gen.md) -- generate_vertex.py auto-bumps to -v2, -v3 when file exists, no overwrites
+- [Multi-Image Color Transfer](reference_multi_image_color_transfer.md) -- IMAGE_0 structure + IMAGE_1 color when supplier lacks clean front shot
+- [Minimal Prompt Clean Ref](feedback_minimal_prompt_clean_ref.md) -- one-liner beats verbose when source is a passing kraft prodref
+- [Hero Prodref for Package Categories](project_hero_prodref_categories.md) -- UNBOXING/GIFTED/WHAT_YOU_GET/DELIVERY use hero shot as prodref, no frame_direction
+- [Validator UGC-Only Scope](feedback_validator_ugc_scope.md) -- v3-validator is for UGC content prompts, not kraft prodref generation
+- [Subject Placement Scene-Only](feedback_subject_placement_scene_only.md) -- subject_placement describes LOCATION, never prodref background
+- [Pipeline Skill Chain Locked](reference_pipeline_skill_chain.md) -- 5-step chain: pipeline -> randomizer -> fidelity-prompt -> validator -> generate_vertex
+- [No Headband in OUTFIT_MATCH](feedback_no_headband_outfit.md) -- sunglasses never perched/pushed up on head; RA rejected headband style
+- [Package Categories Sparingly](feedback_package_categories_sparingly.md) -- UNBOXING/GIFTED/DELIVERY max 1 per batch, same hero vibe
+- [Spec Trim Face-Worn](feedback_spec_trim_face_worn.md) -- strip temple-arm lines from specs for WEARING/SELFIE/OUTFIT_MATCH
+- [Version-Bump Before Save](feedback_image_bank_backup.md) -- rename curated files to -v2 before overwrite; lost 16 picks 126
+- [Visual Inspection for Ambiguous](feedback_visual_image_inspection.md) -- filenames misclassify ~20% of content, use phash or Read
+- [Model Gallery](reference_model_gallery.md) -- pick-and-export at :8125, preload from saved picks
+- [Meta Album API Dead](reference_meta_album_api_limits.md) -- POST /albums blocked forever, manual create + API add photos
+- [Vertex Rate Limits](reference_vertex_rate_limits.md) -- ~2 parallel effective, 429 on burst, 25-30s stagger
+- [Image Banks April 2026](project_image_bank_april.md) -- 44 chatbot + 74 FB stories picks in contents/assets/
+- [Cloudflare Worker Fallback](reference_cloudflare_worker_fallback.md) -- dubery-chatbot-fallback, sends away message when laptop off
+- [Worker TG Ping Rule](feedback_worker_ping_rule.md) -- Worker pings ONLY on order_intent. FAQ/polite hold stay silent.
+- [Handoff Continuation Rule](feedback_handoff_continuation.md) -- bot keeps replying after handoff, urgent TG ping only
+- [Chatbot Behavior Aligned](project_chatbot_behavior_aligned.md) -- all critical dimensions covered session 125
+- [Chatbot Employee Discipline](project_chatbot_employee_discipline.md) -- 7 guardrails + TURN_CAP=10 + policy one-shot (session 127, Alkabir trigger)
+- [Chatbot RAS Creative Readiness](project_chatbot_ras_creative_readiness.md) -- what's ready for other clients, custom-work per client, platform gaps, pricing draft
+- [Comment Auto-DM (Meta UI)](reference_comment_auto_dm.md) -- nurture DM + 10 keywords + album link, was 699 bug source
+- [Chatbot Image Bank v2](reference_chatbot_image_bank_v2.md) -- bank-driven, 44 picks, upload_bank_to_drive.py + auto-load in knowledge_base.py
+- [FB Stories Pool](reference_fb_stories_pool.md) -- 74 picks, 4h rotation, story_rotation.py reads JSON dynamically
+- [Conversational FAQ](feedback_conversational_faq.md) -- FAQ answers must sound like a shop assistant, not a spec sheet
+- [Live Chatbot Code Path](reference_chatbot_live_path.md) -- chatbot/ is live, tools/chatbot/ is stale
+- [Chatbot Auto-Start Tasks](reference_chatbot_autostart.md) -- DuberyMNL-Chatbot + DuberyMNL-Tunnel at-logon, no admin
+- [Chatbot Admin Endpoints](reference_chatbot_admin_endpoints.md) -- /flag, /release, /mark-sale, /status, /chat-test, /conversations v2 + env vars
+- [Chatbot Ad Registry](reference_chatbot_ad_registry.md) -- chatbot/ad_registry.json maps Meta ref tags to opener hints (per-variant/per-series/generic)
+- [PowerShell from Bash Quirks](feedback_powershell_from_bash.md) -- $_ mangling, schtasks denial, cp1252 default
+- [Google API Client Broken](feedback_google_api_client_broken.md) -- IPv4 monkey-patch needed
+- [Rasclaw Telegram](project_rasclaw_telegram.md) -- LIVE, text + voice + photos
+- [Rasclaw Bypass Mode](project_rasclaw_bypass_mode.md) -- bypassPermissions + RASCLAW_MODE-gated PreToolUse guard, narration system prompt
+- [Command Center](reference_command_center.md) -- Local dashboard at :8090, Claude Agent SDK backend, Phase 1 MVP shipped session 130
+- [Command Center Phase 1 Complete](project_command_center_phase1_complete.md) -- 46/46 tasks done 2026-04-18, 27 files, Phase 2/3 backlog
+- [Command Center Phase 2 Scoping](project_command_center_phase2_scoping.md) -- session 131 spec, SUPERSEDED by session 133 simplified build
+- [Bespoke Content Gen Mode](project_bespoke_mode.md) -- concept recreation: paste reference image → agent interprets → brand-faithful output
+- [Form Always Randomizes](feedback_form_always_randomizes.md) -- Command Center forms never build prompts; blank=randomize; locks via CLI flags not prompt hints
+- [Claude Agent SDK Install](reference_claude_agent_sdk_install.md) -- pip install works remote via tunnel, subscription auth inherits, ~$0.24 cache-create + cheap resume
+- [Register Rebind Bug](feedback_register_rebinds_bug.md) -- Python module-level list reassignment breaks aliased importers -- mutate in place
+- [Belle Telegram](project_belle_telegram.md) -- PLANNED, personal EA for Arabelle
+- [Website Building Workflow](../../../../projects/EA-brain/references/summaries/jack-roberts-10k-websites.md) -- Firecrawl → 5 questions → Relume → Claude Code
+- [Jono 4 Tools 10x Websites](../../../../projects/EA-brain/references/summaries/jono-4-tools-10x-claude-websites.md) -- Three.js + Spline + Kling 3.0 before/after + Seedance; use kie.ai direct not Higgsfield
+- [Higgsfield AI Overview](../../../../projects/EA-brain/references/summaries/higgsfield-ai-overview.md) -- $29/mo Creator creative platform; Marketing Studio (ugc/tv_spot/product_review presets); Cinema Studio 3.5 (AICast characters); MCP for Claude; Supercomputer agent (early/buggy). Best DuberyMNL use: ugc + tv_spot ad formats. Not in stack yet.
+- [Higgsfield Trial + Install](reference_higgsfield_trial.md) -- Free=50cr watermarked 720p; Creator=$29/mo 500cr; install: `/plugin marketplace add higgsfield-ai/skills`; test ugc+tv_spot modes first
+- [Seedance via kie.ai (Jay E)](../../../../projects/EA-brain/references/summaries/jay-seedance-claude-skill.md) -- ByteDance video model; beats Veo3/Kling/Sora on smooth rotation; kie.ai access already live; Pro 720p 10s = 410cr; image-to-video + motion graphics strongest use cases
+- [Jordan Platten 3 AI Systems](../../../../projects/EA-brain/references/summaries/jordan-platten-3-ai-systems.md) -- revenue-distance rule, retainer pricing

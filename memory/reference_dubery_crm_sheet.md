@@ -17,9 +17,7 @@ related: [project_chatbot_live.md, project_chatbot_knowledge_base.md]
    - Status: Cold / Warm / Hot / Converted / Lost
    - Auto-scored by `infer_status()` in `crm_sync.py` based on extracted signals
 
-2. **Orders** -- one row per completed order (created on `order_complete=true`)
-   - Columns: Order ID, Lead ID, Items, Quantity, Total, Discount Code, Payment Method, Delivery Preference, Delivery Time, Order Date, Status
-   - Order ID auto-generated: `ORD-{YYYYMMDD-HHMMSS}`
+2. **Orders** -- **DEPRECATED as of 2026-05-24.** No longer written or read. Closed sales moved to the DuberyMNL Orders sheet -- see [[reference_dubery_orders_sheet]] + [[orders-consolidation-2026-05-24]]. Single legacy row (ORD-20260419-130654, Pending) left in place as test/dead lead. Old schema: Order ID, Lead ID, Items, Quantity, Total, Discount Code, Payment Method, Delivery Preference, Delivery Time, Order Date, Status
 
 3. **Lead Score Log** -- append-only log of status transitions
    - Columns: Lead ID, Timestamp, Previous Status, New Status, Trigger
@@ -34,8 +32,8 @@ related: [project_chatbot_live.md, project_chatbot_knowledge_base.md]
 - Sheets API enabled on `dubery` GCP project
 
 **Code:**
-- `cloud-run/crm_sync.py` -- all sync functions (upsert_lead, create_order, append_message, load_history, infer_status, log_status_change)
-- Wired into `cloud-run/messenger_webhook.py::process_message()` -- runs inline after bot reply sent
+- `chatbot/crm_sync.py` -- all sync functions (upsert_lead, create_order, append_message, load_history, infer_status, log_status_change)
+- Wired into `chatbot/messenger_webhook.py::process_message()` -- runs inline after bot reply sent
 - Errors swallowed: CRM sync failures never block customer replies
 
 **Cold-start recovery:**

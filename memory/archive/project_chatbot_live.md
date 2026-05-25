@@ -1,6 +1,6 @@
 ---
-name: Chatbot Live on Cloud Run
-description: DuberyMNL Messenger chatbot deployed to Cloud Run -- architecture, URL, what works, what's pending
+name: Chatbot Live (Local Flask + CF Tunnel)
+description: DuberyMNL Messenger chatbot architecture -- local Flask on laptop, Cloudflare named tunnel to chatbot.duberymnl.com, Worker fallback. (NOT Cloud Run -- Cloud Run migration attempted then abandoned per session 124 decision.)
 type: project
 related:
   - reference_cloud_run_chatbot.md

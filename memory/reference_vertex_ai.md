@@ -2,13 +2,14 @@
 name: Vertex AI Setup
 description: GCP project dubery -- ADC auth, Gemini 3.1 Flash image gen, Veo 3.1 video gen, pricing, available models
 type: reference
-related: [feedback_naturalism_prompting.md, feedback_plaintext_prompts.md, feedback_simple_prompts.md, project_veo_video_gen.md, reference_gcloud_cli.md, feedback_google_api_client_broken.md, reference_vertex_rate_limits.md]
+related: [feedback_naturalism_prompting.md, feedback_plaintext_prompts.md, feedback_simple_prompts.md, project_veo_video_gen.md, reference_gcloud_cli.md, feedback_google_api_client_broken.md, reference_vertex_rate_limits.md, feedback_vertex_prompt_json_format.md]
 originSessionId: 3d75bacc-60e4-44d2-8b0f-716a6f44b55b
 ---
 ## GCP Account
 - Account: ronaldadriansarinas@gmail.com
 - Project: dubery (ID: 371181189379)
-- $300 free credits, expires July 5, 2026
+- **Free Trial:** $218.44 remaining / $300 (73%), expires July 5, 2026 — used by generate_vertex.py
+- **GenAI App Builder credit:** $1,000 remaining / $1,000 (100%), untouched — only activates if Agent Builder APIs are used
 - Billing account: 019082-3259C7-AAC8BD
 
 ## Authentication

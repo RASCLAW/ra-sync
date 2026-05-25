@@ -2,7 +2,7 @@
 name: TG Poll 409 — Claude Code Plugin Conflict
 description: Claude Code's Telegram plugin long-polls the same bot token; causes persistent 409 on monitor.py getUpdates; commands only work when Claude Code is closed
 type: feedback
-related: [reference_tg_send_helper.md, feedback_chatbot_architecture.md]
+related: [reference_tg_send_helper.md, feedback_chatbot_architecture.md, feedback_tg_409_diagnosis_2026_05_21.md]
 originSessionId: 0ef80e2f-49fd-4996-b6ef-fd3e0f504429
 ---
 Claude Code's Telegram plugin (`~/.claude/plugins/cache/claude-plugins-official/telegram/0.0.6`, runs as `bun server.ts`, PID visible in process list) holds a long-poll `getUpdates` on the same bot token used by DuberyMNL chatbot and monitor.py.

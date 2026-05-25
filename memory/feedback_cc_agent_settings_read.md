@@ -5,8 +5,6 @@ type: feedback
 related: [reference_cc_command_center.md]
 originSessionId: 6a7be7cb-ce51-4aec-9150-1a82c10e48aa
 ---
-Agent reads settings correctly on the first generation only. On subsequent runs, it ignores mode and type -- only aspect ratio, count, and product reference are applied consistently.
+RESOLVED (2026-05-15): `/api/agent/reset` endpoint clears the AgentSession (session_id + last_ok_ts + last_error). A "Reset Agent" button in the CC triggers this before each generation run so settings are always read fresh.
 
-**Why:** Likely the session context from the first run carries forward, so the agent relies on cached instructions instead of re-reading the current form state each time.
-
-**How to apply:** When fixing, ensure settings (mode, type, and all form fields) are re-injected into the prompt on every generation call, not assumed from session memory.
+**How to apply:** No longer a blocking issue. If settings bleed across runs again, check that the reset call fires before the generation prompt is sent.

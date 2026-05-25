@@ -12,6 +12,9 @@ metadata:
     - project_schedule_v2_shipped.md
     - project_cc_sidebar_collapse.md
     - project_schedule_tab_v2_plan.md
+    - project_feed_scheduler_handoff_plan.md
+    - feedback_task_scheduler_power_policy.md
+    - feedback_meta_subcode_99_transient.md
   originSessionId: eca7da81-9a6e-484a-960a-59e08728160d
 ---
 
@@ -49,7 +52,9 @@ Absolute Python path required (HKCU PATH wiped, default `python` not found).
 - Default `python` not in PATH (HKCU wipe) -- always use absolute path for cron task `/TR`
 - File-not-found errors were mislabeled `network:` -- added explicit `Path.exists()` check before `requests.post`
 - File-lock fcntl/msvcrt pattern works on Windows; queue files atomic-written via `os.replace`
-- Laptop sleep skips cron -- accepted, hybrid Meta-native safety net is backlog
+- Laptop sleep skips cron -- 2026-05-23 incident proved the multi-day-offline case is real (1h13m late post). Hybrid Meta-native handoff PLANNED, see [[project_feed_scheduler_handoff_plan]]
+- Task Scheduler default battery policy silently no-ops ticks when on battery/asleep -- see [[feedback_task_scheduler_power_policy]]
+- Meta Graph API subcode 99 transients hit this path -- see [[feedback_meta_subcode_99_transient]]
 
 ## v2 plan ready (NOT yet built)
 See [[project_schedule_tab_v2_plan]] -- AI Suggest chat + Calendar in 3 top tabs. RA chose to use v1 in real workflow first.

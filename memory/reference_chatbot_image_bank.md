@@ -5,7 +5,7 @@ type: reference
 related: [project_chatbot_knowledge_base.md, project_chatbot_live.md, reference_cloud_run_chatbot.md, reference_cloudflare_migration.md, feedback_visual_product_inspection.md, project_image_bank_april.md]
 originSessionId: b1211702-4f57-4a72-a5b5-98cb55c11c8f
 ---
-**Current state (as of session 106, 2026-04-12):** 48 images, 8 categories, per-image captions, `{url, caption}` schema. Fully loaded in `cloud-run/knowledge_base.py`. Full image bank text is 65 lines in the chatbot system prompt.
+**Current state (as of session 106, 2026-04-12):** 48 images, 8 categories, per-image captions, `{url, caption}` schema. Fully loaded in `chatbot/knowledge_base.py`. Full image bank text is 65 lines in the chatbot system prompt.
 
 **Schema:**
 ```python
@@ -45,7 +45,7 @@ PRODUCT_IMAGES = {
 
 **Drive folder:** `DuberyMNL/Chatbot Images/` (ID: `1TnnaSmd_IzRbus3mCwYw--FO0k4pOByZ`). Manifest at `tools/chatbot/drive_image_manifest.json`. Upload script: `tools/drive/upload_chatbot_images.py` (idempotent, skips existing).
 
-**How to add more images:** Drop new files into Drive, add entries to the manifest, re-run upload script. Then add a new entry to the corresponding category dict in `cloud-run/knowledge_base.py` with `{"url": _drive(file_id), "caption": "..."}`.
+**How to add more images:** Drop new files into Drive, add entries to the manifest, re-run upload script. Then add a new entry to the corresponding category dict in `chatbot/knowledge_base.py` with `{"url": _drive(file_id), "caption": "..."}`.
 
 **TODO (session 114):**
 - Replace hero shots with accurate, higher-quality versions (current ones are stale landing page card shots)

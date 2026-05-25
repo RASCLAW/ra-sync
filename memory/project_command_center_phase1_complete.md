@@ -2,7 +2,7 @@
 name: Command Center Phase 1 Complete
 description: 2026-04-18 session 130 -- 46/46 Phase 1 tasks shipped. Backend + shell + Home + Monitor + click-to-chat bot all working. 27 new files.
 type: project
-related: reference_command_center.md, reference_claude_agent_sdk_install.md, project_rasclaw_telegram.md, project_command_center_phase2_scoping.md
+related: reference_command_center.md, reference_claude_agent_sdk_install.md, project_rasclaw_telegram.md, project_command_center_phase2_scoping.md, project_feed_scheduler.md
 originSessionId: 65f454a5-f69c-4ea7-9925-80aa4bafc8cc
 ---
 ## Status

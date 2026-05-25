@@ -2,7 +2,7 @@
 name: Google API cache_discovery=False Hangs on Restart
 description: cache_discovery=False forces a network fetch of the discovery doc every restart — no timeout, hangs indefinitely; pre-warm at startup instead
 type: feedback
-related: [feedback_crm_adc_scope.md, feedback_chatbot_architecture.md]
+related: [feedback_crm_adc_scope.md, feedback_chatbot_architecture.md, reference_googleapi_httplib2_fallback.md]
 originSessionId: 6301781d-2f22-4e59-b1f1-3a4187f641a5
 ---
 Never use `cache_discovery=False` in production Google API `build()` calls. Pre-warm the service client at startup in a daemon thread.

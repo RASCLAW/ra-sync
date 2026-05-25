@@ -30,10 +30,10 @@ originSessionId: 70bad458-80be-401f-b689-c0aedf9cdc10
 - Payload shape: FormData with single `payload` field = JSON string of `{name, phone, address, notes, items, caption_id, grand_total, delivery_fee, express}`
 - `items` = `[{name: "Bandits – Tortoise", qty: 1}, ...]` grouped per variant, uses EN-DASH (U+2013)
 - Variant order names live in `dubery-landing-v3/products/data.json` as `order_name` field per variant
-- Pricing: 1 pair ₱599 + ₱99 delivery = ₱698. 2+ pairs = ₱99 bundle discount + FREE Metro Manila delivery.
+- Pricing: 1 pair ₱499 + ₱99 delivery = ₱598. 2+ pairs = FREE Metro Manila delivery (see [[project_dubery_pricing_499]] for COD fee detail).
 
 **PDP "2 pairs" pill behavior:**
-- q=1: stay on PDP, single-variant checkout, delivery ₱99, total ₱698
+- q=1: stay on PDP, single-variant checkout, delivery ₱99, total ₱598
 - q=2: redirect to `/order/?model=<slug>&qty=1` so user can mix in a second colorway (PDP doesn't support multi-variant checkout)
 
 **Hero carousel (added session 151):** 2-slide swipeable carousel. Arrows + dots + touch swipe. No auto-rotate.
@@ -71,4 +71,4 @@ Then: http://localhost:8300 (normal) or http://localhost:8300?edit (editor)
 - Deploy to Vercel preview
 - Domain swap v1 → v3
 
-**Validated end-to-end 2026-04-19:** Two test orders landed in "DuberyMNL Orders" sheet (row 9 smoke bandits-tortoise + outback-red ₱1099; row 10 RA's real test 3 pairs ₱1698). Math: n×599 − 99 bundle discount = grand total for n≥2.
+**Validated end-to-end 2026-04-19:** Two test orders landed in "DuberyMNL Orders" sheet (rows 9-10, smoke + RA's real test). Pricing was ₱599/pair at the time — current price is ₱499/pair since 2026-04-25 (see [[project_dubery_pricing_499]]).

@@ -2,7 +2,7 @@
 name: Rasta Red Kraft Prodref Unreliable
 description: The 01-hero kraft prodref for rasta-red renders gold/amber mirrored lenses in collection compositions instead of the expected red mirror. Causes fidelity drift when Rasta Red is included in mixed-product batches.
 type: project
-related: [project_brand_collection_formula.md, reference_kraft_prodref_workflow.md, project_batch001_fidelity.md, feedback_prompt_bloat_fidelity.md]
+related: [project_brand_collection_formula.md, reference_kraft_prodref_workflow.md, project_batch001_fidelity.md, feedback_prompt_bloat_fidelity.md, project_carousel_rasta_red.md]
 originSessionId: 4c8d3a18-7f47-44f5-a26a-1a841fdc1451
 ---
 The `contents/assets/prodref-kraft/rasta-red/01-hero.png` reference image produces inconsistent lens color in Gemini outputs when used in multi-product brand collection compositions. Expected per product-specs: "Vibrant mirrored polarized lenses" (red-toned). Actual in renders: gold/amber/yellow mirror tones, especially in warm-lit or flat-studio mixed scenes.

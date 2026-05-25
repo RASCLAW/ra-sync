@@ -24,6 +24,6 @@ Filipino customers on Messenger use very short shorthand that non-PH bots misint
 **Why:** Session 99 — during the refactor verification, "Hm" was returning a generic greeting ("Hey! What can I help you with?") because I assumed it was a confused noise. RA corrected: "hm is actually short for how much." This is the kind of PH customer-behavior knowledge that doesn't exist in Gemini's training data — it has to be explicitly in the system prompt.
 
 **How to apply:**
-- The system prompt in `cloud-run/conversation_engine.py` has a `SHORT / UNCLEAR MESSAGES` section that lists these patterns with the expected response for each. Update it when new patterns surface from customer data.
+- The system prompt in `chatbot/conversation_engine.py` has a `SHORT / UNCLEAR MESSAGES` section that lists these patterns with the expected response for each. Update it when new patterns surface from customer data.
 - Test new shorthand in `/chat-test` before shipping. Each new pattern needs at least one smoke test case.
 - This list will grow. Don't assume it's complete. When the bot responds weirdly to a short customer message, the first question is: "is this a shorthand I haven't taught it yet?"

@@ -15,7 +15,7 @@ Two permanent image banks curated from `contents/ready/` via model gallery (sess
 
 ### chatbot-image-bank-2026-04.json
 - **Purpose:** Chatbot image bank (messenger-chatbot channel)
-- **Consumer:** `cloud-run/` chatbot Gemini handler
+- **Consumer:** `chatbot/` chatbot Gemini handler
 - **Count:** 44 picks (2 person + 2 product × 11 models)
 - **Path:** `contents/assets/chatbot-image-bank-2026-04.json`
 - **Rotation:** per-conversation contextual (Gemini picks by model color mentioned)

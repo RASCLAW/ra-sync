@@ -14,7 +14,7 @@ Send `{"attachment": {"type": "image", "payload": {"url": "...", "is_reusable": 
 Pre-upload via `POST /v21.0/me/message_attachments` with the URL payload + `is_reusable: true`. Meta returns an `attachment_id`. Subsequent sends use `{"attachment": {"type": "image", "payload": {"attachment_id": "..."}}}`. No URL fetch, near-instant delivery.
 
 **Implementation in DuberyMNL chatbot:**
-- In-memory dict `_attachment_cache: {url -> attachment_id}` in `cloud-run/messenger_webhook.py`
+- In-memory dict `_attachment_cache: {url -> attachment_id}` in `chatbot/messenger_webhook.py`
 - `send_image()` checks cache first, falls back to upload + cache on miss
 - `warm_attachment_cache()` runs at module load to pre-upload all 48 images from `knowledge_base.ALL_IMAGES` (takes ~30-60s but eliminates first-send loading circles)
 - Cache dies on Cloud Run instance restart -- warmup re-runs on next boot

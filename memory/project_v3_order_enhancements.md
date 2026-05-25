@@ -2,7 +2,7 @@
 name: v3 Order Page Enhancements
 description: UX improvements to /order/ and PDP done in session 150 -- colorLabel names, accordions, delivery note, order backup
 type: project
-related: [project_v3_order_redesign.md, project_v3_pdp_cart_redesign.md, reference_dubery_orders_sheet.md]
+related: [project_v3_pdp_cart_redesign.md, reference_dubery_orders_sheet.md, project_dubery_v3_landing.md]
 originSessionId: 6f096e3d-7dd1-44e9-9e25-e2b60f9781a1
 ---
 Session 150 improvements to the order/checkout flow:

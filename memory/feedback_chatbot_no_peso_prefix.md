@@ -14,7 +14,7 @@ Chatbot replies must render prices as plain numbers: `599`, `1200`, `100`. Never
 **Why:** Session 123, RA flagged chatbot was prefixing every price with "P" (e.g. "P599", "P1,099"). It reads noisy and adds no information in a PH-only Messenger context. Plain numbers match how customers themselves write prices ("okay for 599?") and feel more conversational.
 
 **How to apply:**
-- Rule lives in `cloud-run/conversation_engine.py` SECURITY RULES block.
-- `get_pricing_text()` in `cloud-run/knowledge_base.py` outputs plain numbers; FAQ answers that mention shipping also use plain numbers.
+- Rule lives in `chatbot/conversation_engine.py` SECURITY RULES block.
+- `get_pricing_text()` in `chatbot/knowledge_base.py` outputs plain numbers; FAQ answers that mention shipping also use plain numbers.
 - When writing future examples, ad copy, or landing page price tags, only the website storefront UI keeps currency symbols (visual price tags are a separate convention). Chatbot and ad COPY stay plain.
 - This works alongside the English-first language rule (feedback_chatbot_language.md) -- both enforce a conversational register.

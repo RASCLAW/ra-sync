@@ -7,7 +7,7 @@ originSessionId: b1aea53b-bbbc-4ae7-a895-504a630a8a04
 ---
 Session 98 (2026-04-10) -- RA asked to rebuild the chatbot knowledge base from draft state to production-ready.
 
-**Source of truth:** `tools/chatbot/KNOWLEDGE_BASE.md` -- editable markdown document RA can update freely. Synced to `cloud-run/knowledge_base.py` when finalized.
+**Source of truth:** `tools/chatbot/KNOWLEDGE_BASE.md` -- editable markdown document RA can update freely. Synced to `chatbot/knowledge_base.py` when finalized.
 
 **Key content changes from draft:**
 - **Product descriptions:** Rewrote from actual visual inspection of hero shots. Bandits = slim square with chrome badge. Outback = blocky angular with colored badge. Rasta = oversized aviator with gold accents + rasta stripe. Per-variant notes (e.g. Matte Black pattern is inside temples only).
@@ -35,7 +35,7 @@ Session 98 (2026-04-10) -- RA asked to rebuild the chatbot knowledge base from d
 
 **Why:** The draft knowledge base had inaccurate product descriptions, wrong inclusions (hard case instead of pouch), missing provincial payment flow, outdated persona, and no image support beyond basic hero shots.
 
-**How to apply:** `KNOWLEDGE_BASE.md` is the editable source. When content needs updating, edit the markdown first, then sync to `cloud-run/knowledge_base.py`. Don't edit the Python file directly for content changes.
+**How to apply:** `KNOWLEDGE_BASE.md` is the editable source. When content needs updating, edit the markdown first, then sync to `chatbot/knowledge_base.py`. Don't edit the Python file directly for content changes.
 
 ---
 

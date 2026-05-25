@@ -1,8 +1,19 @@
 ---
-name: Veo Prompting Rules
-description: Motion-only prompts, negative prompts as nouns, duration constraints, enhance_prompt can't be disabled
-type: feedback
-related: [project_veo_video_gen.md, reference_vertex_ai.md]
+name: veo-prompting-rules
+description: "Motion-only prompts, negative prompts as nouns, duration constraints, enhance_prompt can't be disabled"
+metadata: 
+  node_type: memory
+  type: feedback
+  related: 
+    - project_veo_video_gen.md
+    - reference_vertex_ai.md
+    - feedback_veo_ref_image_not_supported.md
+    - feedback_veo_rai_not_faces.md
+    - feedback_veo_rai_composition.md
+    - feedback_veo_8sec_prompt.md
+    - feedback_veo_ref_image_not_supported.md
+    - feedback_veo_rai_not_faces.md
+  originSessionId: f29ecc51-1ba5-4419-a23a-1a504a4c3a30
 ---
 
 Veo video gen prompting rules learned from testing + Google docs:

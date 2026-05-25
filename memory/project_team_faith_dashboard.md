@@ -1,8 +1,8 @@
 ---
 name: Team Faith Dashboard Project
-description: React dashboard for April 2026 team productivity scorecard — source file, update workflow, and current feature state
+description: React dashboard for April 2026 team productivity scorecard (frozen historical) — source file, formulas, PDF pipeline. Active team work moved to Team Jonnah May MTD.
 type: project
-related: [feedback_table_min_width_mobile.md, user_work_role.md]
+related: [feedback_table_min_width_mobile.md, user_work_role.md, project_jonnah_dashboard.md]
 originSessionId: 590dce33-e1ff-43a6-ad42-807fe9b70a39
 ---
 Team Faith Dashboard is a React/Vite app at `C:/Users/RAS/projects/team-dashboard/` built to visualize the April 2026 CMS production scorecard for RA's Informdata team.
@@ -42,7 +42,7 @@ Team Faith Dashboard is a React/Vite app at `C:/Users/RAS/projects/team-dashboar
 - SUPERVISOR_BRIEF.md — data-driven supervisor report; all numbers verified from aprilData.json before writing
 - PDF pipeline: `marked` (MD→HTML) + playwright (HTML→PDF); scripts at `.tmp/make_sup_pdf.cjs` + `.tmp/send_sup_tg.py`; must use `.cjs` because package.json has `"type": "module"`
 - Both PDFs sent to TG (Rasclaw bot, chat 1762124488)
-- Open: Marielle Fuse scoring — 54.0% includes Fuse, 43.2% CMS-only; supervisor to confirm which applies
+- Marielle Fuse scoring (resolved 2026-05-20 as stale): final answer = 54% (Fuse counted at same CMS rate); supervisor never overruled. April closed. May MTD shows `fuseTotal: 0` for Marielle so the question no longer recurs.
 
 **Why:** Portfolio piece + practical tool. Shows RA can build data-driven dashboards from raw Excel.
 
