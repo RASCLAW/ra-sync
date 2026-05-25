@@ -64,7 +64,7 @@ python tools/drive/sync_folder.py --local <path> --remote "DuberyMNL/backup/<des
 - **Backups fire only on `/closeout` or `/sendit`** — no auto-sync mid-session. Mid-session crash loses the diff. Mitigation: `/savepoint` or `/savesession` at ~75% context.
 - **`HEYHO/` not git-tracked** — empty dir, intentional.
 - **`_archive/` not git-tracked** — archival material, intentional.
-- **`ra-sync` not maintained** — 81 dirty memory files, repo pending archive per backlog. Low urgency.
+- **`ra-sync` git history caught up 2026-05-25** (commit `0af60b3`, sessions 169-174 memory backlog). `ra-sync/memory/` IS the physical store; `~/.claude/projects/<project>/memory/` is a Windows junction pointing into it — so `git add` in `ra-sync` and `git add` in `~/.claude` both stage the same underlying files. Must commit both repos to keep histories aligned. Repo still pending archive per backlog (move project-specific memories out first), but in the meantime keep both committed.
 
 ## Settings change 2026-05-23
 
