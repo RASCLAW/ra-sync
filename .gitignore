@@ -1,0 +1,4 @@
+# Memory is the live auto-memory store (junction target for ~/.claude project memory).
+# Backed up via claude-config.git (tracks the same files) + Drive sync.
+# NOT tracked here: a 'git reset --hard' in this repo would otherwise revert live memory.
+memory/
